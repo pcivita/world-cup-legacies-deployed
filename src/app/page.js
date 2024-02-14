@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={`flex min-h-screen flex-col items-center gap-4`}>
       <div className="flex-col p-24 h-min border-2">
-        <h1 className="">World Cup Project</h1>
+        <h1 className="">World Cup Project Update</h1>
         <h2>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
