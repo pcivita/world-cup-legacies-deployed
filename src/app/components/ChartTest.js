@@ -39,8 +39,7 @@ export default function ChartTest({ width, height }) {
   return (
     <>
       <svg
-        className=""
-        style={{ backgroundColor: "lightgray" }}
+        className="bg-gray-200"
         viewBox={`0 0 ${width} ${height}`} // ? do we need viewBox?
       >
         {/* {Y Axis} */}

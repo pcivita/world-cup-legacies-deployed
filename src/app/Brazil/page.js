@@ -7,7 +7,9 @@ import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
 import { Scrollama, Step } from "react-scrollama";
 
-// TODO: Chart Loading is Weird Right Now
+// TODO: Static Image loads later, ask Serdar
+// TODO: add more margin to Title
+// TODO: Change Font
 
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -34,11 +36,6 @@ export default function Page() {
           <Image src={backgroundImage} alt="" className="block w-full h-auto" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
         </div>
-
-        {/* <img
-          src="/BrazilHeader.webp"
-          className="w-full max-h-screen object-cover"
-        /> */}
       </div>
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
@@ -68,7 +65,46 @@ export default function Page() {
           deserunt mollit anim id est laborum.
         </p>
       </div>
-      <ScrollyTelling />
+      <ScrollyTelling className="max-w-3xl" />
+      <div className="max-w-3xl self-center">
+        <p className="text-xl mb-10">
+          Then, I&apos;m thinking we have a bit more data before we reach any
+          graph. I&apos;m just filling in space for now and, of Course, any of
+          this is subject to change. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+
+        <p className="text-xl mb-10">
+          Then, I&apos;m thinking we have a bit more data before we reach any
+          graph. I&apos;m just filling in space for now and, of Course, any of
+          this is subject to change. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
   );
 }

@@ -12,15 +12,14 @@ const ScrollyTelling = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="sticky top-20 z-0">
+    <div className="relative border-2 border-black max-w-3xl">
+      <div className="sticky top-20 z-0 max-w-3xl">
         <Image src={testPic} alt="test" />
       </div>
+
       <Scrollama>
         <Step>
-          <div className="border-white border-2 h-96 z-40 relative">
-            Hello World
-          </div>
+          <div className="border-white w-1/4 h-96 relative bg-white"></div>
         </Step>
         <Step>
           <div className="border-white border-2 h-96 z-40 relative">

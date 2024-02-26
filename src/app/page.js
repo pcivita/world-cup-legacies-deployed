@@ -8,6 +8,7 @@ export default function Home() {
   // Thus, d3 can redraw itself based on the current dimensions
   let [ref, bounds] = useMeasure();
 
+  // TODO: Three columns covering the screen for each country.
   return (
     <main className={`flex min-h-screen flex-col items-center gap-4`}>
       <div className="flex-col p-24 h-min border-2">
