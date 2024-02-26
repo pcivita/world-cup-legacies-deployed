@@ -19,7 +19,7 @@ export default function ChartTest({ width, height }) {
     bottom: 20,
     left: 40,
   };
-  // d3 extent calculates min max of data
+  // d3 calculates min max of data
   let xScale = d3
     .scaleLinear()
     .domain(d3.extent(dummyData.map((d) => d[0])))
@@ -39,8 +39,7 @@ export default function ChartTest({ width, height }) {
   return (
     <>
       <svg
-        className=""
-        style={{ backgroundColor: "lightgray" }}
+        className="bg-gray-200"
         viewBox={`0 0 ${width} ${height}`} // ? do we need viewBox?
       >
         {/* {Y Axis} */}
