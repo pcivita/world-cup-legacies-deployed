@@ -1,7 +1,7 @@
 import React from "react";
-import { Slider } from "../../../components/Slider";
-import sad_messi from './images/sad_messi.jpeg';
-import happy_messi from './images/happy_messi.jpeg';
+import { Slider } from "../components/Slider";
+import sad_messi from "./images/sad_messi.jpeg";
+import happy_messi from "./images/happy_messi.jpeg";
 
 export default function Page() {
   return (
