@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
-
+import Image from "next/image";
+import testPic from "../../../public/test.png";
 const ScrollyTelling = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
 
@@ -13,7 +14,7 @@ const ScrollyTelling = () => {
   return (
     <div className="relative">
       <div className="sticky top-20 z-0">
-        <img src="/test.png" />
+        <Image src={testPic} alt="test" />
       </div>
       <Scrollama>
         <Step>
