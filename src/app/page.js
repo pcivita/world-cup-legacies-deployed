@@ -1,5 +1,5 @@
 "use client";
-import ChartTest from "../../components/ChartTest";
+import ChartTest from "./components/ChartTest";
 import useMeasure from "react-use-measure";
 import Link from "next/link";
 
