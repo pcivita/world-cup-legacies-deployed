@@ -19,7 +19,13 @@ export default function Home() {
         </h2>
       </div>
 
-      <Link href="/Brazil" className="bg-green-200 rounded-md p-4">
+      <div className="flex w-screen bg-slate-400 flex-row justify-between h-screen">
+        <div className="h-1/2 border-2 bg-blue-400 w-1/3">Brazil</div>
+        <div className="h-1/2 border-2 bg-blue-400 w-1/3">Russia</div>
+        <div className="h-1/2 border-2 bg-blue-400 w-1/3">Qatar</div>
+      </div>
+
+      {/* <Link href="/Brazil" className="bg-green-200 rounded-md p-4">
         <h2> Go to Brazil! </h2>
       </Link>
       <Link href="/Russia" className="bg-blue-200 rounded-md p-4">
@@ -27,7 +33,7 @@ export default function Home() {
       </Link>
       <Link href="/Qatar" className="bg-red-200 rounded-md p-4">
         <h2> Go to Qatar! </h2>
-      </Link>
+      </Link> */}
     </main>
   );
 }
