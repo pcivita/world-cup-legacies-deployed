@@ -5,7 +5,7 @@ import ScrollyTelling from "../components/ScrollyTelling";
 //import useMeasure from "react-use-measure";
 import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
-import { Scrollama, Step } from "react-scrollama";
+import BarGraph from "../components/BarGraph";
 
 // TODO: Static Image loads later, ask Serdar
 // TODO: add more margin to Title
