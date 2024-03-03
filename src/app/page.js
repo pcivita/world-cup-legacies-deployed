@@ -3,7 +3,7 @@ import ChartTest from "./components/ChartTest";
 import useMeasure from "react-use-measure";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
+ç;
 export default function Home() {
   // This hook allows us to dynamically measure our components
   // Thus, d3 can redraw itself based on the current dimensions

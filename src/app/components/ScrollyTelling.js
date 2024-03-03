@@ -18,7 +18,8 @@ const ScrollyTelling = () => {
       <div className="sticky top-20 z-0 mb-96">
         <BarGraph currentIndex={currentStepIndex} />
         <p>
-          I'm sticky. The current triggered step index is: {currentStepIndex}
+          I&apos;m sticky. The current triggered step index is:{" "}
+          {currentStepIndex}
         </p>
       </div>
 
