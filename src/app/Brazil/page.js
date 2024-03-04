@@ -6,6 +6,7 @@ import ScrollyTelling from "../components/ScrollyTelling";
 import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
 import { Scrollama, Step } from "react-scrollama";
+import ScrollyChart from "../../../public/temp-chart.png";
 
 // TODO: Static Image loads later, ask Serdar
 // TODO: add more margin to Title
@@ -65,7 +66,7 @@ export default function Page() {
           deserunt mollit anim id est laborum.
         </p>
       </div>
-      <ScrollyTelling className="max-w-3xl align-center" />
+      <ScrollyTelling className="max-w-3xl align-center" chart={ScrollyChart} />
       <div className="max-w-3xl self-center">
         <p className="text-xl mb-10">
           Then, I&apos;m thinking we have a bit more data before we reach any

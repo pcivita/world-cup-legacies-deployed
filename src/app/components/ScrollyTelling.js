@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
 import Image from "next/image";
-import ScrollyChart from "../../../public/temp-chart.png";
-const ScrollyTelling = () => {
+
+const ScrollyTelling = ( { chart } ) => {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
 
   // TODO: Each card could be mapped intead, would look better.
@@ -15,7 +15,7 @@ const ScrollyTelling = () => {
   return (
     <div className="relative  max-w-3xl mx-auto">
       <div className="sticky top-20 z-0 mb-96">
-        <Image src={ScrollyChart} alt="test" />
+        <Image src={chart} alt="test" />
       </div>
 
       <Scrollama>
