@@ -65,7 +65,7 @@ export default function Page() {
           deserunt mollit anim id est laborum.
         </p>
       </div>
-      <ScrollyTelling className="max-w-3xl align-center"/>
+      <ScrollyTelling className="max-w-3xl align-center" />
       <div className="max-w-3xl self-center">
         <p className="text-xl mb-10">
           Then, I&apos;m thinking we have a bit more data before we reach any
