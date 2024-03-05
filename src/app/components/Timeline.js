@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { Chrono } from "react-chrono";
 
 export const Timeline = ( {items, theme} ) => {

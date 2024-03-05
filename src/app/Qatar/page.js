@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Slider } from "../components/Slider";
 import ScrollyTelling from "../components/ScrollyTelling";
+import { FlipCard } from "../components/FlipCard";
 import beforeImage from "./images/al_bayt_oct_2014.jpg";
 import afterImage from "./images/al_bayt_may_2023.jpg";
 import backgroundImage from "../../../public/QatarHeader.jpeg";
@@ -11,6 +12,7 @@ import ridershipTimeline from "./images/ridership.png";
 import people from "./images/people.png";
 import plane from "./images/airplane.png";
 import money from "./images/money.png";
+
 
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -38,21 +40,21 @@ export default function Page() {
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
         <h2 className="text-black font-bold text-left">
-          Qatar's World Cup Legacy: Innovation at the Expense of Workers' Rights
+          Qatar&apos;s World Cup Legacy: Innovation at the Expense of Workers&apos; Rights
         </h2>
       </div>
       <div className="max-w-3xl self-center">
         <p className="text-xl">
 	        The 2022 FIFA World Cup is largely regarded as one of the most striking in history. 
           Lionel Messi, one of the greatest players the sport has ever seen, led Argentina to 
-          victory in thrilling fashion against the reigning world champions, France. The tournament 
-          took place in November and December rather than its typical time slot during the summer 
-          to avoid the worst of Qatar's desert heat. It was the first World Cup to take place in the 
+          victory in thrilling fashion against the reigning world champions, France. Typically a summer
+          event, the 2022 tournament was held in November and December 
+          to avoid the worst of Qatar&apos;s desert heat. It was the first World Cup to take place in the 
           Middle East, and perhaps the most technologically innovative in history. It was also hugely 
           controversial: Qatar won the bid to host the tournament amid calls of corruption within the 
-          Fédération Internationale de Football Association (FIFA), and has been accused of committing 
+          Fédération Internationale de Football Association (FIFA) and has been accused of committing 
           several human rights violations against their migrant workers. Read on to learn more about 
-          Qatar’s World Cup legacy.
+          Qatar&apos;s World Cup legacy.
         </p>
       </div>
 
@@ -89,7 +91,7 @@ export default function Page() {
           their public transport, hospitality, and telecommunications systems to prepare 
           for the influx of fans; and they would use the momentum from the tournament to 
           develop football initiatives around the Middle East. To ensure that their stadiums 
-          wouldn’t go to waste after the end of the tournament—a fate suffered by many of the 
+          wouldn&apos;t go to waste after the end of the tournament—a fate suffered by many of the 
           facilities constructed for World Cups in past host countries—the Bid Committee 
           asserted that they would repurpose them. Many of the stadiums that Qatar built for 
           the World Cup would be downsized or renovated into shops, health clinics, schools, 
@@ -97,7 +99,36 @@ export default function Page() {
           repurpose parts of their stadiums to help construct twenty-two modular stadiums in 
           developing countries around the world.
         </p>
-      </div>      
+      </div>
+
+      <div className="max-w-3xl self-center">
+        <p className="text-2xl text-black font-bold text-center">Over a year after the 2022 World Cup, have FIFA and Qatar followed through on these promises?</p>
+        <br/>
+        <p className="text-center italic">Click the cards below to find out.</p>
+      </div>
+
+      {/* Flip cards */}
+      
+      <div>
+        <div className="float-left w-1/3 h-400 p-10">
+          <FlipCard
+            frontText="FIFA claimed that Qatar hosted the first completely carbon-neutral World Cup. Is that true?"
+            backText="It's unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
+          />
+        </div>
+        <div className="float-left w-1/3 h-400 p-10">
+          <FlipCard
+            frontText="Qatar pledged to dismantle and repurpose many of their stadiums after the tournament for public infrastructure projects within and outside of the county. Have they done that?"
+            backText="Not yet, but they have an excuse: Qatar recently hosted another major football tournament, the AFC Asian Cup, in January and February of 2024. Presumably, they will begin renovating and repurposing their stadiums now that the tournament is over."
+          />
+        </div>
+        <div className="float-right w-1/3 h-400 p-10">
+          <FlipCard
+            frontText="Qatar planned to invest billions of dollars in public infrastructure projects in advance of the World Cup. Were those projects carried out?"
+            backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accomodations, improved the telecommunications network, and bolstered their tourism industry."
+          />
+        </div>
+      </div>
 
       <ScrollyTelling className="absolute max-w-3xl align-center" chart={ridershipTimeline} />
       <div className="max-w-3xl self-center">
@@ -122,7 +153,7 @@ export default function Page() {
         {/* Slider comparing images. */}
         <div>
           <Slider beforeImage={beforeImage} afterImage={afterImage} />
-          <p className="text-center p-5 italic">Pre- and post-construction aerial views of Al Bayt Stadium's build site.</p>
+          <p className="text-center p-5 italic">Pre- and post-construction aerial views of Al Bayt Stadium&apos;s build site.</p>
         </div>
         <p className="text-xl mb-10">
           Then, I&apos;m thinking we have a bit more data before we reach any
