@@ -6,6 +6,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useEffect } from "react";
+import Link from "next/link";
 
 let clamp = (number, min, max) => Math.min(Math.max(number, min), max);
 
@@ -68,9 +69,11 @@ export default function Header() {
               }}
               className="flex origin-left items-center text-xl font-semibold uppercase"
             >
-              <span className="-ml-1 text-2xl tracking-[-.075em]">
-                World Cup Legacies
-              </span>
+              <Link href="/">
+                <span className="-ml-1 text-2xl tracking-[-.075em]">
+                  World Cup Legacies
+                </span>
+              </Link>
             </motion.p>
             <motion.nav
               style={{
@@ -82,9 +85,9 @@ export default function Header() {
               }}
               className="flex space-x-4 text-xs font-medium text-slate-400"
             >
-              <a href="#">News</a>
-              <a href="#">Sports</a>
-              <a href="#">Culture</a>
+              <a href="/Brazil">Brazil</a>
+              <a href="/Russia">Russia</a>
+              <a href="/Qatar">Qatar</a>
             </motion.nav>
           </div>
         </motion.header>
