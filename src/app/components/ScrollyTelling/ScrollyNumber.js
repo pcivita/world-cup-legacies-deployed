@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
-import Image from "next/image";
-import BarGraph from "../BarGraph";
+import { motion } from "framer-motion";
 import CountUp, { useCountUp } from "react-countup";
 const ScrollyNumber = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -15,7 +14,17 @@ const ScrollyNumber = () => {
 
   return (
     <div className="relative  max-w-3xl mx-auto">
-      <div className="sticky top-1/2 z-0 mb-96 border-2 w-5/6 text-center">
+      <motion.div
+        className="sticky top-1/2 z-0 mb-96 border-2 w-5/6 text-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 2 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0 },
+        }}
+      >
         {/* <BarGraph currentIndex={currentStepIndex} /> */}
         <CountUp
           end={1000000000}
@@ -25,7 +34,7 @@ const ScrollyNumber = () => {
           className="text-5xl"
         />
         <p>{currentStepIndex}</p>
-      </div>
+      </motion.div>
 
       <Scrollama offset={0.5} onStepEnter={onStepEnter}>
         <Step data={0} key={0}>
