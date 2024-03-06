@@ -5,7 +5,7 @@ import ScrollyTelling from "../components/ScrollyTelling";
 //import useMeasure from "react-use-measure";
 import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
-import BarGraph from "../components/BarGraph";
+import Header from "../components/Header";
 
 // TODO: Static Image loads later, ask Serdar
 // TODO: add more margin to Title
@@ -22,8 +22,8 @@ export default function Page() {
   // This hook allows us to dynamically measure our components
   //let [ref, bounds] = useMeasure(); ref={ref}
   return (
-    // Header
     <div className="flex flex-col gap-10">
+      <Header />
       <div className="flex justify-start items-end relative w-full max-h-screen">
         <div className="absolute">
           <div className="relative z-10 p-4 m-12">
