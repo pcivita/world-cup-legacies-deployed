@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import { Slider } from "../components/Slider";
-import ScrollyTelling from "../components/ScrollyTelling";
+import ScrollyTelling from "../components/QatarScrolly";
 import { FlipCard } from "../components/FlipCard";
 import beforeImage from "./images/al_bayt_oct_2014.jpg";
 import afterImage from "./images/al_bayt_may_2023.jpg";
@@ -44,22 +44,20 @@ export default function Page() {
         </h2>
       </div>
       <div className="max-w-3xl self-center">
-        <p className="text-xl">
+        <p className="text-lg">
 	        The 2022 FIFA World Cup is largely regarded as one of the most striking in history. 
           Lionel Messi, one of the greatest players the sport has ever seen, led Argentina to 
-          victory in thrilling fashion against the reigning world champions, France. Typically a summer
-          event, the 2022 tournament was held in November and December 
-          to avoid the worst of Qatar&apos;s desert heat. It was the first World Cup to take place in the 
-          Middle East, and perhaps the most technologically innovative in history. It was also hugely 
-          controversial: Qatar won the bid to host the tournament amid calls of corruption within the 
-          Fédération Internationale de Football Association (FIFA) and has been accused of committing 
-          several human rights violations against their migrant workers. Read on to learn more about 
-          Qatar&apos;s World Cup legacy.
+          victory in thrilling fashion against the reigning world champions, France. It was the first 
+          World Cup to take place in the Middle East, and perhaps the most technologically innovative 
+          in history. It was also hugely controversial: Qatar won the bid to host the tournament amid 
+          calls of corruption within the Fédération Internationale de Football Association (FIFA) and 
+          has been accused of committing several human rights violations against their migrant workers. 
+          Read on to learn more about Qatar&apos;s World Cup legacy.
         </p>
       </div>
 
       {/* Statistics */}
-      <div>
+      <div className="max-w-7xl self-center">
         <div className="float-left w-1/3 max-h-200 text-center p-10">
           <div className="flex justify-center items-center">
             <Image src={people} width={200} height={200} alt="Three figures graphic"/>
@@ -84,7 +82,11 @@ export default function Page() {
       </div>
 
       <div className="max-w-3xl self-center">
-        <p className="text-xl">
+        <p className="text-2xl text-[#8A1538] font-bold">
+          Qatar&apos;s World Cup Proposal
+        </p>
+        <br />
+        <p className="text-lg">
           In their winning bid to host the 2022 FIFA World Cup, the Qatar 2022 Bid 
           Committee proposed that they would host the first completely carbon-neutral 
           World Cup; they would embark on large-scale infrastructure projects to revamp 
@@ -102,27 +104,26 @@ export default function Page() {
       </div>
 
       <div className="max-w-3xl self-center">
-        <p className="text-2xl text-black font-bold text-center">Over a year after the 2022 World Cup, have FIFA and Qatar followed through on these promises?</p>
-        <br/>
-        <p className="text-center italic">Click the cards below to find out.</p>
+        <p className="text-2xl text-[#8A1538] font-bold">Over a year after the 2022 World Cup, have FIFA and Qatar followed through on these promises?</p>
+        <p className="italic mt-2">Click the cards below to find out.</p>
       </div>
 
       {/* Flip cards */}
       
-      <div>
-        <div className="float-left w-1/3 h-400 p-10">
+      <div className="max-w-5xl self-center">
+        <div className="float-left w-1/3 h-500 p-10">
           <FlipCard
-            frontText="Was the 2022 World Cup the first carbon-neutral World Cup?"
+            frontText="Was it the first carbon-neutral World Cup?"
             backText="It's unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
           />
         </div>
-        <div className="float-left w-1/3 h-400 p-10">
+        <div className="float-left w-1/3 h-500 p-10">
           <FlipCard
-            frontText="Has Qatar dismantled and repurposed any of their stadiums since the World Cup ended?"
+            frontText="Has Qatar dismantled and/or repurposed any of their stadiums since the World Cup ended?"
             backText="Not yet, but they have an excuse: Qatar recently hosted another major football tournament, the AFC Asian Cup, in January and February of 2024. Presumably, they will begin renovating and repurposing their stadiums now that the tournament is over."
           />
         </div>
-        <div className="float-right w-1/3 h-400 p-10">
+        <div className="float-right w-1/3 h-500 p-10">
           <FlipCard
             frontText="Did Qatar develop its planned public infrastructure projects in advance of the World Cup?"
             backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accomodations, improved the telecommunications network, and bolstered their tourism industry."
@@ -130,48 +131,41 @@ export default function Page() {
         </div>
       </div>
 
-      <ScrollyTelling className="absolute max-w-3xl align-center" chart={ridershipTimeline} />
       <div className="max-w-3xl self-center">
-        <p className="text-xl mb-10">
-          Then, I&apos;m thinking we have a bit more data before we reach any
-          graph. I&apos;m just filling in space for now and, of Course, any of
-          this is subject to change. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+        <p className="text-xl">
+          Insert text here to talk about Qatar's infrastructure projects!
         </p>
-        {/* Slider comparing images. */}
-        <div>
-          <Slider beforeImage={beforeImage} afterImage={afterImage} />
-          <p className="text-center p-5 italic">Pre- and post-construction aerial views of Al Bayt Stadium&apos;s build site.</p>
-        </div>
-        <p className="text-xl mb-10">
-          Then, I&apos;m thinking we have a bit more data before we reach any
-          graph. I&apos;m just filling in space for now and, of Course, any of
-          this is subject to change. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in
-          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
+      </div>
+
+      <ScrollyTelling className="absolute max-w-3xl align-center" />
+
+      <div className="max-w-3xl self-center">
+        <p className="text-lg mb-10">
+          Migrant workers who helped develop Qatari infrastructure in advance of the World Cup 
+          were subject to wage theft, exploitation, and a lack of compensation for abuses during 
+          and after the tournament, according to the Human Rights Watch. As of November 20, 2023, 
+          Qatar and FIFA have failed to address these abuses meaningfully.
+        </p>
+        <p className="text-lg mb-10">
+          Qatar&apos;s economy spiked during the World Cup, but in the aftermath, as tournament fans 
+          left and the country returned to its normal operations, the labor market slowed down. 
+          Employers of migrant workers, primarily labor supply companies and construction subcontractors, 
+          reacted to the slowdown by underpaying their workers and denying them end-of-service benefits. 
+          Some workers report feeling trapped—they did not feel free to leave the country because that 
+          would mean they would lose the benefits owed to them, or their employers told them to wait, 
+          often for months without pay, until new projects came up. Many workers, fearing slow, taxing 
+          legal battles or employer retaliation, did not report the abuses. The Human Rights Watch documented 
+          five cases in which employers refused to grant permission to their workers to switch jobs, despite 
+          Qatar outlawing that practice in 2020. And while Qatar&apos;s government claimed that they would provide 
+          appropriate compensation to their workers, in many cases, that compensation never materialized. 
+        </p>
+        <p className="text-lg mb-10">
+         Qatar&apos;s Workers&apos; Support Fund has successfully paid some workers what they were owed, 
+         the Supreme Committee&apos;s Universal Reimbursement Scheme reimbursed some workers for recruitment fees, 
+         and nearly two dozen companies created life insurance programs to compensate families of deceased 
+         workers. However, for many other workers, their compensation never materialized. Some workers paid 
+         high recruitment fees in order to land their jobs in the first place, yet their wages were unable 
+         to make up the difference to what they originally paid.
         </p>
       </div>
     </div>
