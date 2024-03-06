@@ -112,19 +112,19 @@ export default function Page() {
       <div>
         <div className="float-left w-1/3 h-400 p-10">
           <FlipCard
-            frontText="FIFA claimed that Qatar hosted the first completely carbon-neutral World Cup. Is that true?"
+            frontText="Was the 2022 World Cup the first carbon-neutral World Cup?"
             backText="It's unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
           />
         </div>
         <div className="float-left w-1/3 h-400 p-10">
           <FlipCard
-            frontText="Qatar pledged to dismantle and repurpose many of their stadiums after the tournament for public infrastructure projects within and outside of the county. Have they done that?"
+            frontText="Has Qatar dismantled and repurposed any of their stadiums since the World Cup ended?"
             backText="Not yet, but they have an excuse: Qatar recently hosted another major football tournament, the AFC Asian Cup, in January and February of 2024. Presumably, they will begin renovating and repurposing their stadiums now that the tournament is over."
           />
         </div>
         <div className="float-right w-1/3 h-400 p-10">
           <FlipCard
-            frontText="Qatar planned to invest billions of dollars in public infrastructure projects in advance of the World Cup. Were those projects carried out?"
+            frontText="Did Qatar develop its planned public infrastructure projects in advance of the World Cup?"
             backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accomodations, improved the telecommunications network, and bolstered their tourism industry."
           />
         </div>
