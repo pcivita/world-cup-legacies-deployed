@@ -26,9 +26,9 @@ export const Slider = ({ beforeImage, afterImage }) => {
   };
 
   return (
-    <div className="w-full relative" onMouseUp={handleMouseUp}>
+    <div className="relative" onMouseUp={handleMouseUp}>
       <div
-        className="relative w-full max-w-[400px] aspect-[2374/1606] m-auto overflow-hidden select-none"
+        className="relative aspect-[2374/1606] m-auto overflow-hidden select-none"
         onMouseMove={handleMove}
         onMouseDown={handleMouseDown}
       >
@@ -40,7 +40,7 @@ export const Slider = ({ beforeImage, afterImage }) => {
         />
 
         <div
-          className="absolute top-0 left-0 right-0 w-full max-w-[400px] aspect-[2374/1606] m-auto overflow-hidden select-none"
+          className="absolute top-0 left-0 right-0 aspect-[2374/1606] m-auto overflow-hidden select-none"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
