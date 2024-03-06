@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
 import Image from "next/image";
-import ScrollyChart from "../../../public/temp-chart.png";
-import BarGraph from "./BarGraph";
-const ScrollyTelling = () => {
+import BarGraph from "../BarGraph";
+import CountUp, { useCountUp } from "react-countup";
+const ScrollyNumber = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   // TODO: Each card could be mapped intead, would look better.
@@ -15,19 +15,24 @@ const ScrollyTelling = () => {
 
   return (
     <div className="relative  max-w-3xl mx-auto">
-      <div className="sticky top-20 z-0 mb-96">
-        <BarGraph currentIndex={currentStepIndex} />
-        <p>
-          I&apos;m sticky. The current triggered step index is:{" "}
-          {currentStepIndex}
-        </p>
+      <div className="sticky top-1/2 z-0 mb-96 border-2 w-5/6 text-center">
+        {/* <BarGraph currentIndex={currentStepIndex} /> */}
+        <CountUp
+          end={1000000000}
+          duration={3}
+          enableScrollSpy={true}
+          scrollSpyOnce={true}
+          className="text-5xl"
+        />
+        <p>{currentStepIndex}</p>
       </div>
 
       <Scrollama offset={0.5} onStepEnter={onStepEnter}>
         <Step data={0} key={0}>
           <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
             <p className="p-8">
-              Hello, I would be the first card: Step of index {0}{" "}
+              Over 1 billion reais (~$300 million dollars) of debt remain. Index{" "}
+              {0}{" "}
             </p>
           </div>
         </Step>
@@ -45,9 +50,17 @@ const ScrollyTelling = () => {
             </p>
           </div>
         </Step>
+
+        <Step data={3} key={4}>
+          <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
+            <button className="w-full h-full bg-blue-400 rounded-lg">
+              PRESS ME
+            </button>
+          </div>
+        </Step>
       </Scrollama>
     </div>
   );
 };
 
-export default ScrollyTelling;
+export default ScrollyNumber;

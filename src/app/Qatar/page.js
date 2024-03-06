@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import { Slider } from "../components/Slider";
-import ScrollyTelling from "../components/QatarScrolly";
+import ScrollyTelling from "../components/ScrollyTelling/ScrollyNumber";
 import { FlipCard } from "../components/FlipCard";
 import beforeImage from "./images/al_bayt_oct_2014.jpg";
 import afterImage from "./images/al_bayt_may_2023.jpg";
@@ -13,14 +13,13 @@ import people from "./images/people.png";
 import plane from "./images/airplane.png";
 import money from "./images/money.png";
 
-
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
 
   // This callback fires when a Step hits the offset threshold. It receives the
   // data prop of the step, which in this demo stores the index of the step.
   const onStepEnter = ({ data }) => {
-      setCurrentStepIndex(data);
+    setCurrentStepIndex(data);
   };
 
   return (
@@ -40,7 +39,8 @@ export default function Page() {
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
         <h2 className="text-black font-bold text-left">
-          Qatar&apos;s World Cup Legacy: Innovation at the Expense of Workers&apos; Rights
+          Qatar&apos;s World Cup Legacy: Innovation at the Expense of
+          Workers&apos; Rights
         </h2>
       </div>
       <div className="max-w-3xl self-center">
@@ -60,24 +60,45 @@ export default function Page() {
       <div className="max-w-7xl self-center">
         <div className="float-left w-1/3 max-h-200 text-center p-10">
           <div className="flex justify-center items-center">
-            <Image src={people} width={200} height={200} alt="Three figures graphic"/>
+            <Image
+              src={people}
+              width={200}
+              height={200}
+              alt="Three figures graphic"
+            />
           </div>
           <p className="text-[#478778] text-5xl font-bold">3.4 million</p>
-          <p className="text-[#36454F] italic">people attended World Cup events in Qatar</p>
+          <p className="text-[#36454F] italic">
+            people attended World Cup events in Qatar
+          </p>
         </div>
         <div className="float-left w-1/3 max-h-200 text-center p-10">
           <div className="flex justify-center items-center">
-            <Image src={money} width={200} height={200} alt="Money bag graphic"/>
+            <Image
+              src={money}
+              width={200}
+              height={200}
+              alt="Money bag graphic"
+            />
           </div>
           <p className="text-[#478778] text-5xl font-bold">$7.5 billion</p>
-          <p className="text-[#36454F] italic">earned by FIFA in revenue (USD)</p>
+          <p className="text-[#36454F] italic">
+            earned by FIFA in revenue (USD)
+          </p>
         </div>
         <div className="float-right w-1/3 max-h-200 text-center p-10">
           <div className="flex justify-center items-center">
-            <Image src={plane} width={200} height={200} alt="Airplane graphic"/>
+            <Image
+              src={plane}
+              width={200}
+              height={200}
+              alt="Airplane graphic"
+            />
           </div>
           <p className="text-[#478778] text-5xl font-bold">1.4 million</p>
-          <p className="text-[#36454F] italic">people traveled to Qatar for the tournament</p>
+          <p className="text-[#36454F] italic">
+            people traveled to Qatar for the tournament
+          </p>
         </div>
       </div>
 
