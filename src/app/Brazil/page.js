@@ -6,6 +6,7 @@ import ScrollyBar from "../components/ScrollyTelling/ScrollyBar";
 import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
 import Header from "../components/Header";
+import InteractiveBar from "../components/InteractiveBar";
 
 // TODO: Static Image loads later, ask Serdar
 // TODO: add more margin to Title
@@ -126,6 +127,7 @@ export default function Page() {
           sint occaecat cupidatat non proident, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </p>
+        <InteractiveBar />
       </div>
     </div>
   );

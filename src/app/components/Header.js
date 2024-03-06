@@ -1,3 +1,4 @@
+// This was following a tutorial: https://www.youtube.com/watch?v=He1_AH6kC8Y&t=59s
 import {
   motion,
   useMotionTemplate,
@@ -83,11 +84,27 @@ export default function Header() {
                   [1, 0]
                 ),
               }}
-              className="flex space-x-4 text-xs font-medium text-slate-400"
+              className="flex space-x-4 text-xl font-medium text-slate-400"
             >
-              <a href="/Brazil">Brazil</a>
-              <a href="/Russia">Russia</a>
-              <a href="/Qatar">Qatar</a>
+              <motion.a
+                whileHover={{ scale: 1.05, color: "black" }}
+                // transition={{ duration: 0.05 }}
+                href="/Brazil"
+              >
+                Brazil
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.05, color: "black" }}
+                href="/Russia"
+              >
+                Russia
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.05, color: "black" }}
+                href="/Qatar"
+              >
+                Qatar
+              </motion.a>
             </motion.nav>
           </div>
         </motion.header>
