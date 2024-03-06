@@ -26,8 +26,9 @@ export default function BarGraph({ currentIndex, dataTest }) {
         currentIndex === 0 ? firstDataInitial : secondDataInitial,
         currentIndex <= 2 ? firstDataInitial : secondDataFinal,
       ]}
-      width={500}
+      width={600}
       height={300}
+      className="w-1/2"
     />
   );
 }
