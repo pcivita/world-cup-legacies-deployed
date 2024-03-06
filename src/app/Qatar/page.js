@@ -135,7 +135,7 @@ export default function Page() {
         <div className="float-left w-1/3 h-500 p-10">
           <FlipCard
             frontText="Was it the first carbon-neutral World Cup?"
-            backText="It's unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
+            backText="It&apos;s unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
           />
         </div>
         <div className="float-left w-1/3 h-500 p-10">
@@ -154,7 +154,7 @@ export default function Page() {
 
       <div className="max-w-3xl self-center">
         <p className="text-xl">
-          Insert text here to talk about Qatar's infrastructure projects!
+          Insert text here to talk about Qatar&apos;s infrastructure projects!
         </p>
       </div>
 
