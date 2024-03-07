@@ -3,15 +3,15 @@ import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import { Slider } from "../components/Slider";
-import ScrollyTelling from "../components/ScrollyTelling/ScrollyNumber";
+import ScrollyTelling from "../components/ScrollyTelling/QatarScrolly";
 import { FlipCard } from "../components/FlipCard";
-import beforeImage from "./images/al_bayt_oct_2014.jpg";
-import afterImage from "./images/al_bayt_may_2023.jpg";
 import backgroundImage from "../../../public/QatarHeader.jpeg";
 import ridershipTimeline from "./images/ridership.png";
 import people from "./images/people.png";
 import plane from "./images/airplane.png";
 import money from "./images/money.png";
+import beforeImage from "./images/al_bayt_oct_2014.jpg";
+import afterImage from "./images/al_bayt_may_2023.jpg";
 
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -62,8 +62,8 @@ export default function Page() {
           <div className="flex justify-center items-center">
             <Image
               src={people}
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               alt="Three figures graphic"
             />
           </div>
@@ -76,8 +76,8 @@ export default function Page() {
           <div className="flex justify-center items-center">
             <Image
               src={money}
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               alt="Money bag graphic"
             />
           </div>
@@ -90,8 +90,8 @@ export default function Page() {
           <div className="flex justify-center items-center">
             <Image
               src={plane}
-              width={200}
-              height={200}
+              width={150}
+              height={150}
               alt="Airplane graphic"
             />
           </div>
@@ -101,6 +101,7 @@ export default function Page() {
           </p>
         </div>
       </div>
+
 
       <div className="max-w-3xl self-center">
         <p className="text-2xl text-[#8A1538] font-bold">
@@ -121,12 +122,11 @@ export default function Page() {
           and other public buildings. Additionally, the committee said that Qatar would 
           repurpose parts of their stadiums to help construct twenty-two modular stadiums in 
           developing countries around the world.
+        <br/>
+        <br/>    
+          Over a year after the 2022 World Cup, have FIFA and Qatar followed through on these 
+          promises? Click the cards below to find out.
         </p>
-      </div>
-
-      <div className="max-w-3xl self-center">
-        <p className="text-2xl text-[#8A1538] font-bold">Over a year after the 2022 World Cup, have FIFA and Qatar followed through on these promises?</p>
-        <p className="italic mt-2">Click the cards below to find out.</p>
       </div>
 
       {/* Flip cards */}
@@ -158,35 +158,26 @@ export default function Page() {
         </p>
       </div>
 
+      <div className="max-w-3xl self-center">
+        <Slider beforeImage={beforeImage} afterImage={afterImage} />
+        <p className="text-center p-5 italic">Pre- and post-construction aerial views of Al Bayt Stadium&apos;s build site.</p>
+      </div>
+
+      <div className="max-w-3xl self-center">
+        <p className="text-2xl text-[#8A1538] font-bold">
+          The Life of a World Cup Migrant Worker
+        </p>
+        <br />
+        <p className="text-lg">
+          Scroll to learn about how migrant workers fared before, during, and after the World Cup in Qatar.
+        </p>
+      </div>
+
       <ScrollyTelling className="absolute max-w-3xl align-center" />
 
       <div className="max-w-3xl self-center">
         <p className="text-lg mb-10">
-          Migrant workers who helped develop Qatari infrastructure in advance of the World Cup 
-          were subject to wage theft, exploitation, and a lack of compensation for abuses during 
-          and after the tournament, according to the Human Rights Watch. As of November 20, 2023, 
-          Qatar and FIFA have failed to address these abuses meaningfully.
-        </p>
-        <p className="text-lg mb-10">
-          Qatar&apos;s economy spiked during the World Cup, but in the aftermath, as tournament fans 
-          left and the country returned to its normal operations, the labor market slowed down. 
-          Employers of migrant workers, primarily labor supply companies and construction subcontractors, 
-          reacted to the slowdown by underpaying their workers and denying them end-of-service benefits. 
-          Some workers report feeling trapped—they did not feel free to leave the country because that 
-          would mean they would lose the benefits owed to them, or their employers told them to wait, 
-          often for months without pay, until new projects came up. Many workers, fearing slow, taxing 
-          legal battles or employer retaliation, did not report the abuses. The Human Rights Watch documented 
-          five cases in which employers refused to grant permission to their workers to switch jobs, despite 
-          Qatar outlawing that practice in 2020. And while Qatar&apos;s government claimed that they would provide 
-          appropriate compensation to their workers, in many cases, that compensation never materialized. 
-        </p>
-        <p className="text-lg mb-10">
-         Qatar&apos;s Workers&apos; Support Fund has successfully paid some workers what they were owed, 
-         the Supreme Committee&apos;s Universal Reimbursement Scheme reimbursed some workers for recruitment fees, 
-         and nearly two dozen companies created life insurance programs to compensate families of deceased 
-         workers. However, for many other workers, their compensation never materialized. Some workers paid 
-         high recruitment fees in order to land their jobs in the first place, yet their wages were unable 
-         to make up the difference to what they originally paid.
+          Concluding paragraphs.
         </p>
       </div>
     </div>
