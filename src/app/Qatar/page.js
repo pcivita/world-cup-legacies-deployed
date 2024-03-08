@@ -199,7 +199,7 @@ export default function Page() {
           the sport by accepting Qatar&apos;s bid, and Qatar has been accused of exaggerating their technological 
           and environmental innovations at the World Cup to distract from their human rights abuses.
           The gulf country has a population of three million people, and two million 
-          of those people are migrant workers. These workers have made the World Cup and Qatar's National Vision 2030 
+          of those people are migrant workers. These workers have made the World Cup and Qatar&apos;s National Vision 2030 
           possible, but have been reportedly subject to several human rights violations in the process.
         </p>
         <br/>
@@ -227,7 +227,7 @@ export default function Page() {
           Brazil and Russia have also been accused of mistreating the workers they employed to prepare
           for the 2014 and 2018 World Cups, among other issues. The New York Times reported that many Qataris
           felt that the world employed a double standard when scrutinizing Qatar&apos;s preparations
-          for the tournament, and media coverage of the country's approach to the World Cup often
+          for the tournament, and media coverage of the country&apos;s approach to the World Cup often
           included what many viewed as Orientalist stereotypes about Qataris, Arabs, and Muslims.
         </p>
       </div>
@@ -238,8 +238,8 @@ export default function Page() {
         </div>      
         <p className="text-center p-5 italic">
           Pre- and post-construction aerial views of Al Bayt Stadium in Al Khor, Qatar.
-          Al Bayt was constructed between 2015 and 2018 and cost an estimated $847 million USD. It's 
-          marketed as a desert oasis on Visit Qatar's website, and temperatures can reach as high as 110&deg;F.
+          Al Bayt was constructed between 2015 and 2018 and cost an estimated $847 million USD. It&apos;s 
+          marketed as a desert oasis on Visit Qatar&apos;s website, and temperatures can reach as high as 110&deg;F.
         </p>
       </div>
 
