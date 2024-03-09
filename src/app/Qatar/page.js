@@ -187,7 +187,7 @@ export default function Page() {
         <br/>
         <p className="text-md italic">
           Ridership numbers for Doha Metro since it opened in May 2019. While numbers spiked during the World Cup, 
-          ridership has steadily grown over the past several years.
+          ridership has grown steadily over the past several years.
         </p>
         <br/>
         <br/>
@@ -236,10 +236,10 @@ export default function Page() {
         <div className="flex justify-center">
           <Slider beforeImage={beforeImage} afterImage={afterImage} />
         </div>      
-        <p className="text-center p-5 italic">
+        <p className="p-5 italic">
           Pre- and post-construction aerial views of Al Bayt Stadium in Al Khor, Qatar.
-          Al Bayt was constructed between 2015 and 2018 and cost an estimated $847 million USD. It&apos;s 
-          marketed as a desert oasis on Visit Qatar&apos;s website, and temperatures can reach as high as 110&deg;F.
+          Al Bayt was constructed between 2015 and 2018 and cost an estimated $847 million USD. Qatar 
+          markets it as a desert oasis, and temperatures can reach as high as 110&deg;F.
         </p>
       </div>
 

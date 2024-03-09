@@ -8,7 +8,8 @@ export default function GoToTop () {
     useEffect(() => {
         const scrollCallBack = () => {
             const scrolledFromTop = window.scrollY;
-            setVisible(() => scrolledFromTop > 300);
+            setVisible(() => 
+                scrolledFromTop > 300);
         };
 
         window.addEventListener('scroll', scrollCallBack);
