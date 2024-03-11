@@ -15,6 +15,7 @@ import beforeImage from "./images/al_bayt_oct_2014.jpg";
 import afterImage from "./images/al_bayt_may_2023.jpg";
 import BackToTop from "../components/ToTop";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -115,7 +116,9 @@ export default function Page() {
         <p className="text-lg">
           Qatar hoped to use the World Cup to bolster their reputation worldwide, to 
           achieve global recognition, and to bridge the gap between the West and the Middle East.
-          In their winning bid to host the 2022 FIFA World Cup, the Qatar 2022 Bid 
+          In their <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
+          href="https://digitalhub.fifa.com/m/3041e390c9c0afea/original/fd4w8qgexnrxmquwsb7h-pdf.pdf">winning bid</Link> to 
+          host the 2022 FIFA World Cup, the Qatar 2022 Bid 
           Committee proposed that they would host the first completely carbon-neutral 
           World Cup; they would embark on large-scale infrastructure projects to revamp 
           their public transport, hospitality, and telecommunications systems to prepare 
@@ -128,8 +131,7 @@ export default function Page() {
           and other public buildings. Additionally, the committee said that Qatar would 
           repurpose parts of their stadiums to help construct twenty-two modular stadiums in 
           developing countries around the world.
-        <br/>
-        <br />
+        <br/> <br />
           Did FIFA and Qatar follow through on their promises? Click the cards below to find out.
         </p>
       </div>
@@ -159,13 +161,13 @@ export default function Page() {
 
       <div className="max-w-3xl self-center">
         <p className="text-lg">
-          Winning the World Cup bid served as the catalyst for Qatar&apos;s National Vision 2030, 
-          an ambitious initiative to diversify the country&apos;s economy and usher it into the modern age. 
+          Winning the World Cup bid served as the catalyst for Qatar&apos;s <Link className="text-blue-600 dark:text-blue-500 hover:underline"
+          href="https://www.gco.gov.qa/en/about-qatar/national-vision2030/">National Vision 2030</Link>, an
+          ambitious initiative to diversify the country&apos;s economy and usher it into the modern age. 
           The plan centers human, social, environmental, and economic development, and Qatar used the 
           National Vision to argue that they would host the World Cup with the future in mind. Their preparations, 
           they claimed, would be sustainable, and would benefit the country long after the end of the tournament.
-        <br />
-        <br/>
+        <br /> <br/>
           More or less, Qatar followed through with their infrastructure projects. In addition to building 
           seven new stadiums and renovating an eighth, Qatar revolutionized the country&apos;s public transportation 
           with the construction of Doha Metro, a 47-mile network of automated electric trains that can 
@@ -174,8 +176,7 @@ export default function Page() {
           and even lined roads with new plants and trees. In total, they spent at least $200 billion USD on 
           infrastructure projects, and are slated to spend more as 2030 approaches.
         </p>
-        <br/>
-        <br/>
+        <br/> <br/>
       </div>
 
       <div className="max-w-3xl self-center">
@@ -190,8 +191,7 @@ export default function Page() {
           Ridership numbers for Doha Metro since it opened in May 2019. While numbers spiked during the World Cup, 
           ridership has grown steadily over the past several years.
         </p>
-        <br/>
-        <br/>
+        <br/> <br/>
       </div>
 
       <div className="max-w-3xl self-center"> 
@@ -203,8 +203,7 @@ export default function Page() {
           of those people are migrant workers. These workers have made the World Cup and Qatar&apos;s National Vision 2030 
           possible, but have been reportedly subject to several human rights violations in the process.
         </p>
-        <br/>
-        <br/>
+        <br/> <br/>
         <p className="text-2xl text-[#8A1538] font-bold">
           The Life of a World Cup Migrant Worker
         </p>
@@ -212,22 +211,20 @@ export default function Page() {
         <p className="text-lg">
           Scroll to learn about how migrant workers fared before, during, and after the World Cup in Qatar.
         </p>
-        <br/>
-        <br/>
+        <br/> <br/>
       </div>
 
       <ScrollyTelling className="max-w-3xl align-center" />
 
       <div className="max-w-3xl self-center">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <br/> <br/> <br/> <br/>
         <p className="text-lg mb-10">
           The plight of workers in countries hosting World Cups is not unique to Qatar.
           Brazil and Russia have also been accused of mistreating the workers they employed to prepare
-          for the 2014 and 2018 World Cups, among other issues. The New York Times reported that many Qataris
-          felt that the world employed a double standard when scrutinizing Qatar&apos;s preparations
+          for the 2014 and 2018 World Cups, among other issues. The New York  
+          Times <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
+          href="https://www.nytimes.com/2022/11/25/world/middleeast/qatar-world-cup-criticism.html">reported</Link> that
+          many Qataris felt that the world employed a double standard when scrutinizing Qatar&apos;s preparations
           for the tournament, and media coverage of the country&apos;s approach to the World Cup often
           included what many viewed as Orientalist stereotypes about Qataris, Arabs, and Muslims.
         </p>

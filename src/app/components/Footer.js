@@ -12,7 +12,7 @@ export default function Footer () {
                     <Link className="hover:text-black hover:scale-110 mr-10" href="/">Home</Link>
                     <Link className="hover:text-black hover:scale-110 mx-10" href="/Brazil">Brazil</Link>
                     <Link className="hover:text-black hover:scale-110 mx-10" href="/Russia">Russia</Link>
-                    <Link className="hover:text-black hover:scale-110 ml-10" href="">Qatar</Link>
+                    <Link className="hover:text-black hover:scale-110 ml-10" href="/Qatar">Qatar</Link>
                 </div>
             </div>
       </div>
