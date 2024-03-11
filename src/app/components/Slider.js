@@ -34,8 +34,8 @@ export const Slider = ({ beforeImage, afterImage }) => {
       >
         <Image
           alt="After"
-          width={500}
-          height={338}
+          width={600}
+          height={405}
           priority
           src={afterImage}
         />
@@ -45,8 +45,8 @@ export const Slider = ({ beforeImage, afterImage }) => {
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
-            width={500}
-            height={338}
+            width={600}
+            height={405}
             priority
             alt="Before"
             src={beforeImage}

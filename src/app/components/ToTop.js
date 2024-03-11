@@ -9,7 +9,8 @@ export default function GoToTop () {
         const scrollCallBack = () => {
             const scrolledFromTop = window.scrollY;
             const scrolledTo = scrolledFromTop + window.innerHeight;
-            const checkReachBottom = document.body.scrollHeight - 100 <= scrolledTo;
+            const checkReachBottom = document.body.scrollHeight <= scrolledTo;
+
             setVisible(() => 
                 scrolledFromTop > 300 && !checkReachBottom);
             
@@ -32,7 +33,9 @@ export default function GoToTop () {
         <button
             onClick={scrollToTop}
             className={`${visible ? 'scale-100' : 'scale-0'}
-                z-20 border border-slate-400 flex fixed w-12 h-12 transition-transform duration-200 right-10 bottom-10 rounded-full shadow-xl justify-center items-center hover:bg-[#F0F0F0]
+                z-20 border border-slate-400 bg-white flex fixed w-12 h-12 transition-transform 
+                duration-200 right-10 bottom-10 rounded-full shadow-xl 
+                justify-center items-center hover:bg-[#F0F0F0]
             `}            
         >
             <svg
