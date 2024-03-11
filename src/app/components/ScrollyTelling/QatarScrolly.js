@@ -16,13 +16,13 @@ const ScrollyTelling = () => {
   return (
     <div className="relative max-w-5xl mx-auto">
         
-        <div className="sticky mt-20 top-80 z-10 float-right">
+        <div className="sticky mt-20 top-80 z-0 float-right">
             <Point currentIndex={currentStepIndex} />
         </div>
 
       <Scrollama offset={0.5} onStepEnter={onStepEnter}>
         <Step data={0} key={0}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
             <Line y1={200} y2={1000} />
             <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -36,7 +36,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={1} key={1}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
               <Line y1={0} y2={1000} />
               <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -50,7 +50,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={2} key={2}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
             <Line y1={0} y2={1000} />
             <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -64,7 +64,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={3} key={3}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
             <Line y1={0} y2={1000} />
             <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -80,7 +80,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={4} key={4}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
             <Line y1={0} y2={1000} />
             <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -93,7 +93,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={5} key={5}>
-          <div className="border-2 border-white h-screen">
+          <div className="h-screen">
             <Line y1={0} y2={1000} />
             <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">
@@ -106,7 +106,7 @@ const ScrollyTelling = () => {
           </div>
         </Step>
         <Step data={6} key={6}>
-          <div className="border-2 border-white">
+          <div>
               <Line y1={0} y2={100} />
               <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
               <p className="p-8 text-lg">

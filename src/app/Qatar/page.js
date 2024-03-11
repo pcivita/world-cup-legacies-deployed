@@ -14,6 +14,7 @@ import money from "./images/money.png";
 import beforeImage from "./images/al_bayt_oct_2014.jpg";
 import afterImage from "./images/al_bayt_may_2023.jpg";
 import BackToTop from "../components/ToTop";
+import Footer from "../components/Footer";
 
 export default function Page() {
   const [currentStepIndex, setCurrentStepIndex] = useState(null);
@@ -263,6 +264,7 @@ export default function Page() {
           the costs are worth the investment.
         </p>
       </div>
+      <Footer />
     </div>
   );
 }
