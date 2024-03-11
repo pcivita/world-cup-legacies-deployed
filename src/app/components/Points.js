@@ -30,7 +30,7 @@ function Point({ currentIndex }) {
 
 function Line( {y1, y2} ) {
   return (
-    <div className="absolute right-0 min-h-screen">
+    <div className="absolute right-0 min-h-screen -z-10">
       <svg className="min-h-screen">
         <line x1="150" y1={y1} x2="150" y2={y2} style={{stroke: "#478778", strokeWidth: 2}}/>
       </svg>
