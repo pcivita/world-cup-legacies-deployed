@@ -11,11 +11,26 @@ const ScrollyNumber = () => {
   const onStepEnter = ({ data }) => {
     setCurrentStepIndex(data);
   };
+  // <motion.div
+  //   className="sticky top-1/2 z-0 mb-96 border-2 w-5/6 text-center"
+  //   initial="hidden"
+  //   whileInView="visible"
+  //   viewport={{ once: true }}
+  //   transition={{ duration: 2 }}
+  //   variants={{
+  //     visible: { opacity: 1, scale: 1 },
+  //     hidden: { opacity: 0 },
+  //   }}
+  // >
+  //   {/* <BarGraph currentIndex={currentStepIndex} /> */}
+
+  //   <p>{currentStepIndex}</p>
+  // </motion.div>;
 
   return (
-    <div className="relative  max-w-3xl mx-auto">
+    <div className="relative mx-20">
       <motion.div
-        className="sticky top-1/2 z-0 mb-96 border-2 w-5/6 text-center"
+        className="w-fit sticky top-1/2 left-1/2 z-0 text-center rounded-lg mx-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -25,7 +40,6 @@ const ScrollyNumber = () => {
           hidden: { opacity: 0 },
         }}
       >
-        {/* <BarGraph currentIndex={currentStepIndex} /> */}
         <CountUp
           end={1000000000}
           duration={3}
@@ -33,38 +47,25 @@ const ScrollyNumber = () => {
           scrollSpyOnce={true}
           className="text-5xl"
         />
-        <p>{currentStepIndex}</p>
       </motion.div>
 
-      <Scrollama offset={0.5} onStepEnter={onStepEnter}>
+      <Scrollama offset={0.5} onStepEnter={onStepEnter} className=" z-10">
         <Step data={0} key={0}>
-          <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
-            <p className="p-8">
-              Over 1 billion reais (~$300 million dollars) of debt remain. Index{" "}
-              {0}{" "}
-            </p>
+          <div className=" w-1/2 z-10 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8  border-black ">
+                Over 1 billion reais (~$300 million dollars) of debt remain.
+              </p>
+            </div>
           </div>
         </Step>
         <Step data={1} key={1}>
-          <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
-            <p className="p-8">
-              Hello, I would be the second card: Step of index {1}{" "}
-            </p>
-          </div>
-        </Step>
-        <Step data={2} key={2}>
-          <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
-            <p className="p-8">
-              Hello, I would be the third card: Step of index {2}{" "}
-            </p>
-          </div>
-        </Step>
-
-        <Step data={3} key={4}>
-          <div className=" w-1/4 h-40 relative bg-gray-200 align-center mx-auto mb-96 shadow-md rounded-lg">
-            <button className="w-full h-full bg-blue-400 rounded-lg">
-              PRESS ME
-            </button>
+          <div className="w-1/2 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8 border-black ">
+                Hello, I would be the second card: Step of index {1}{" "}
+              </p>
+            </div>
           </div>
         </Step>
       </Scrollama>

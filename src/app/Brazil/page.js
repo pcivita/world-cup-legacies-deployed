@@ -40,7 +40,9 @@ export default function Page() {
       <div className="flex justify-start items-end relative w-full max-h-screen">
         <div className="absolute">
           <div className="relative z-10 p-4 m-12">
-            <h1 className="text-white text-left">Abandoned Stadiums</h1>
+            <h1 className="text-white text-left font-crimson">
+              Abandoned Stadiums
+            </h1>
             <h2 className="text-white text-left">Brazil, 2014</h2>
           </div>
         </div>
@@ -64,7 +66,7 @@ export default function Page() {
             </h2>
           </div>
           <div className="max-w-3xl self-center">
-            <p className="text-xl mb-10">
+            <p className="text-xl mb-10 font-crimson">
               When Brazil won the bid for the 2014 World Cup back in 2007, it
               was experiencing historic highs in its economy. With low
               inflation, lower inequality, and better living standards, the
@@ -73,14 +75,13 @@ export default function Page() {
               demonstrate it...
             </p>
 
-            <p className="text-xl mb-10">
+            <p className="text-xl mb-10 font-crimson">
               Spending an estimated 31.2 billion reais (around 6.3 billion
               dollars) in preparation for the event, it seemed that Brazil was,
               as the Economist put it back in 2009, “taking off”.
             </p>
 
-            <button onClick={() => setCounter(10000)}>PRESS ME </button>
-            <p className="text-xl">
+            <p className="text-xl font-crimson mb-96">
               Now, 10 years after the event, the country is in a very different
               place. Still dealing with a recession that started in 2014 and the
               consequences of the largest corruption scandal in the world,
@@ -96,6 +97,44 @@ export default function Page() {
             </p>
           </div>
           <ScrollyNumber className="max-w-3xl align-center" />
+          <div className="max-w-3xl self-center mt-36">
+            <p className="text-xl mb-10 font-crimson">
+              When Brazil won the bid for the 2014 World Cup back in 2007, it
+              was experiencing historic highs in its economy. With low
+              inflation, lower inequality, and better living standards, the
+              country was poised to become one of the key global players in the
+              coming decades. And hosting the World Cup was the perfect way to
+              demonstrate it...
+            </p>
+            <p className="text-xl mb-10 font-crimson">
+              Now, 10 years after the event, the country is in a very different
+              place. Still dealing with a recession that started in 2014 and the
+              consequences of the largest corruption scandal in the world,
+              Brazil never took off as it expected. The legacy of the World Cup
+              also mirrors the country&apos;s new reality. Instead of heralding
+              a new era, the 2014 World Cup is mainly remembered in Brazil for
+              its massive spending on infrastructure (Besides the 7x1). No other
+              construction project captures that quite as well as the stadiums
+              built and renovated in time for the event. With many still
+              repaying their debts and some being completely underutilized, the
+              stadiums are the most palpable reminder of Brazil&apos;s late
+              2000s optimism, and what came of it.
+            </p>
+            <p className="text-xl mb-10 font-crimson">
+              Now, 10 years after the event, the country is in a very different
+              place. Still dealing with a recession that started in 2014 and the
+              consequences of the largest corruption scandal in the world,
+              Brazil never took off as it expected. The legacy of the World Cup
+              also mirrors the country&apos;s new reality. Instead of heralding
+              a new era, the 2014 World Cup is mainly remembered in Brazil for
+              its massive spending on infrastructure (Besides the 7x1). No other
+              construction project captures that quite as well as the stadiums
+              built and renovated in time for the event. With many still
+              repaying their debts and some being completely underutilized, the
+              stadiums are the most palpable reminder of Brazil&apos;s late
+              2000s optimism, and what came of it.
+            </p>
+          </div>
           <ScrollyBar className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center">
             <p className="text-xl mb-10">

@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className={`flex min-h-screen flex-col items-center gap-4`}>
       <div className="flex-col p-24 h-min">
-        <h1 className="max-w-3xl">World Cup Legacies</h1>
+        <h1 className="max-w-3xl font-crimson">World Cup Legacies</h1>
         <h2 className="max-w-3xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
