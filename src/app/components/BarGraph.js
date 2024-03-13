@@ -1,6 +1,6 @@
 import { BarChart } from "@mui/x-charts";
 
-export default function BarGraph({ currentIndex, dataTest }) {
+export default function BarGraph({ currentIndex, data }) {
   const firstData = {
     data: [1, 0, 0],
     label: "Initial Cost",
@@ -21,10 +21,13 @@ export default function BarGraph({ currentIndex, dataTest }) {
   return (
     <BarChart
       xAxis={[
-        { scaleType: "band", data: ["Brasilia", "Fortaleza", "Porto Alegre"] },
+        {
+          scaleType: "band",
+          data: ["Initial Cost", "Final Cost", "Debt Remaining"],
+        },
       ]}
       yAxis={[{ min: 0, max: 10 }]}
-      series={[dataArray[currentIndex]]}
+      series={[data]}
       width={600}
       height={300}
       className="w-1/2"

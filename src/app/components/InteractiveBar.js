@@ -18,7 +18,6 @@ export default function InteractiveBar() {
 
   const onClick = (key) => {
     setCurData(dataDict[key]);
-    console.log("cur Data: " + curData.data[1]);
   };
 
   return (
