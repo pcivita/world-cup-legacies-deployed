@@ -5,18 +5,19 @@ import { motion } from "framer-motion";
 // TODO: Make it so one can change both stadium and category.
 export default function InteractiveBar() {
   const dataDict = {
-    SP: { data: [1, 2, 3] },
-    RJ: { data: [0, 5, 1] },
-    MG: { data: [5, 3, 2] },
-    GO: { data: [1, 2, 3] },
-    BR: { data: [0, 5, 1] },
-    BA: { data: [5, 3, 2] },
+    SP: { data: [8.2, 10.5, 6.1] },
+    RJ: { data: [8.2, 10.5, 1.8] },
+    CE: { data: [4.5, 5.7, 1.3] },
+    BA: { data: [5.9, 6.8, 1.2] },
+    RE: { data: [4.9, 5.3, 1.5] },
+    AZ: { data: [5.3, 6.6, 1.5] },
+    CU: { data: [5.9, 5.9, 1.5] },
   };
+
   const [curData, setCurData] = useState(dataDict.RJ);
 
   const onClick = (key) => {
     setCurData(dataDict[key]);
-    console.log("cur Data: " + curData.data[1]);
   };
 
   return (
@@ -26,7 +27,7 @@ export default function InteractiveBar() {
           xAxis={[
             {
               scaleType: "band",
-              data: ["Brasilia", "Fortaleza", "Porto Alegre"],
+              data: ["Initial Cost", "Final Cost", "Debt Remaining"],
             },
           ]}
           yAxis={[{ min: 0, max: 10 }]}

@@ -28,8 +28,6 @@ export default function Home() {
             faced challenges in the aftermath of the tournament—choose one to learn more.
           </p>
         </div>
-
-
         <div className="flex flex-row h-screen w-screen">
           <Link
             href="/Brazil"
