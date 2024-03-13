@@ -43,7 +43,7 @@ export default function Header() {
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-1 overflow-hidden text-slate-600">
-      <div className=" z-10 flex-1 overflow-y-scroll">
+      <div className=" z-50 flex-1 overflow-y-scroll">
         <motion.header
           style={{
             height: useTransform(

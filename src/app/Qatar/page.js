@@ -6,7 +6,7 @@ import { Slider } from "../components/Slider";
 import ScrollyTelling from "../components/ScrollyTelling/QatarScrolly";
 import { FlipCard } from "../components/FlipCard";
 import Header from "../components/Header";
-import backgroundImage from "../../../public/QatarHeader.jpeg";
+import backgroundImage from "../../../public/QatarHeader.jpg";
 import ridershipTimeline from "./images/ridership.png";
 import people from "./images/people.png";
 import plane from "./images/airplane.png";
@@ -42,6 +42,11 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
         </div>
       </div>
+      <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
+            Stadium 974, the first temporary World Cup stadium ever built, was constructed out of 974 shipping containers in Doha, Qatar. (Photo by <a href="https://unsplash.com/@benkoorengevel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben Koorengevel</a> on <a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-CVg55UB571Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>)
+      </p>
+      
+      
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
         <h2 className="font-bold text-left text-[#8A1538]">
@@ -116,7 +121,7 @@ export default function Page() {
         <p className="text-lg">
           Qatar hoped to use the World Cup to bolster their reputation worldwide, to 
           achieve global recognition, and to bridge the gap between the West and the Middle East.
-          In their <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
+          In their <Link className="text-blue-600 dark:text-blue-500 hover:underline"
           href="https://digitalhub.fifa.com/m/3041e390c9c0afea/original/fd4w8qgexnrxmquwsb7h-pdf.pdf">winning bid</Link> to 
           host the 2022 FIFA World Cup, the Qatar 2022 Bid 
           Committee proposed that they would host the first completely carbon-neutral 
@@ -154,7 +159,7 @@ export default function Page() {
         <div className="float-right w-1/3 h-500 p-10">
           <FlipCard
             frontText="Did Qatar develop its planned public infrastructure projects in advance of the World Cup?"
-            backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accomodations, improved the telecommunications network, and bolstered their tourism industry."
+            backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accommodations, improved the telecommunications network, and bolstered their tourism industry."
           />
         </div>
       </div>
@@ -222,7 +227,7 @@ export default function Page() {
           The plight of workers in countries hosting World Cups is not unique to Qatar.
           Brazil and Russia have also been accused of mistreating the workers they employed to prepare
           for the 2014 and 2018 World Cups, among other issues. The New York  
-          Times <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
+          Times <Link className="text-blue-600 dark:text-blue-500 hover:underline"
           href="https://www.nytimes.com/2022/11/25/world/middleeast/qatar-world-cup-criticism.html">reported</Link> that
           many Qataris felt that the world employed a double standard when scrutinizing Qatar&apos;s preparations
           for the tournament, and media coverage of the country&apos;s approach to the World Cup often
@@ -237,7 +242,7 @@ export default function Page() {
         <p className="p-5 italic">
           Pre- and post-construction aerial views of Al Bayt Stadium in Al Khor, Qatar.
           Al Bayt was constructed between 2015 and 2018 and cost an estimated $847 million USD. Qatar 
-          markets it as a desert oasis, and temperatures can reach as high as 110&deg;F.
+          markets it as a desert oasis, and temperatures can reach as high as 110&deg;F. (Google Earth Images &copy; 2024 Airbus)
         </p>
       </div>
 

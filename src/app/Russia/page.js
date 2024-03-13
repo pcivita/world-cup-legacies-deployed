@@ -9,6 +9,7 @@ import BackToTop from "../components/ToTop";
 import Footer from "../components/Footer";
 import beforeImage from "./images/kaliningrad_oct_2011.jpg";
 import afterImage from "./images/kaliningrad_oct_2018.jpg";
+import Link from "next/link";
 
 
 export default function Page() {
@@ -36,6 +37,11 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
         </div>
       </div>
+      <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
+            Kaliningrad Stadium was built on the last natural wetland in Kaliningrad, Russia. To build 
+            on top of the marshy soil, over a million tons of sand were poured over the wetland. (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/User:Rakoon">Rakoon</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad-stadium-march-2017-0001.jpg">Wikimedia Commons</Link>)
+      </p>
+
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
         <h2 className="font-bold text-left text-[#8A1538]">
@@ -64,8 +70,8 @@ export default function Page() {
           year after the World Cup ended, the stadium was reportedly in danger of sinking due to the 
           unstable ground. After the Russian National Team played a match against Kazakhstan at Kaliningrad 
           Stadium towards the end of 2020, the sewage and drainage systems were found to be in poor condition, 
-          leading to <a className="text-blue-600 dark:text-blue-500 hover:underline" 
-          href="https://www.sport-express.ru/football/euro/2020/reviews/rossiya-kazahstan-stadion-v-kaliningrade-gde-sygraet-sbornaya-provalivaetsya-1584215/?fbclid=IwAR24ZurgbdCarfBFephwJKvXs0jDRDgbK0XSzKK9IcHV-egcMX2cDcIv5vQ">cracks and bumps</a> in 
+          leading to <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
+          href="https://www.sport-express.ru/football/euro/2020/reviews/rossiya-kazahstan-stadion-v-kaliningrade-gde-sygraet-sbornaya-provalivaetsya-1584215/?fbclid=IwAR24ZurgbdCarfBFephwJKvXs0jDRDgbK0XSzKK9IcHV-egcMX2cDcIv5vQ">cracks and bumps</Link> in 
           the ground where water had pushed up against the asphalt. The Moscow Times reported that the 
           government set aside 40 million rubles, or around $440,000 USD, to renovate the stadium in 2019, 
           but there is no record of that renovation occurring.
@@ -84,7 +90,7 @@ export default function Page() {
           <Slider beforeImage={beforeImage} afterImage={afterImage} />
         </div>      
         <p className="p-5 italic text-center">
-          Views of Oktyabrsky Island before and after Kaliningrad Stadium was built.
+          Views of Oktyabrsky Island before and after Kaliningrad Stadium was built. (Google Earth Images &copy; 2024 Airbus)
         </p>
       </div>
 
