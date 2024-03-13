@@ -7,8 +7,9 @@ import Image from "next/image";
 import backgroundImage from "../../../public/BrazilHeader.webp";
 import Header from "../components/Header";
 import InteractiveBar from "../components/InteractiveBar";
+import ScrollyChart from "../components/ScrollyTelling/ScrollyChart";
+import { PieChart } from "@mui/x-charts/PieChart";
 
-// TODO: Static Image loads later, ask Serdar
 // TODO: add more margin to Title
 // TODO: PIE CHARTS https://mui.com/x/react-charts/pie/
 
@@ -60,42 +61,46 @@ export default function Page() {
       {imageLoaded && (
         <>
           {/* Intro Text */}
-          <div className="max-w-3xl self-center">
-            <h2 className="text-black font-bold text-left">
-              Subtitle Text Here for impact?
+          <div className="w-3xl self-center">
+            <h2 className="text-black font-bold text-center">
+              Brazil's World Cup Legacy: A False Promise of Growth
             </h2>
           </div>
           <div className="max-w-3xl self-center">
-            <p className="text-xl mb-10 font-crimson">
+            <p className="text-xl mb-10 ">
               When Brazil won the bid for the 2014 World Cup back in 2007, it
               was experiencing historic highs in its economy. With low
               inflation, lower inequality, and better living standards, the
               country was poised to become one of the key global players in the
               coming decades. And hosting the World Cup was the perfect way to
-              demonstrate it...
+              demonstrate it.
             </p>
 
-            <p className="text-xl mb-10 font-crimson">
+            <p className="text-xl mb-10">
               Spending an estimated 31.2 billion reais (around 6.3 billion
               dollars) in preparation for the event, it seemed that Brazil was,
-              as the Economist put it back in 2009, “taking off”.
+              as the Economist put it in 2009, “taking off”.
             </p>
 
-            <p className="text-xl font-crimson mb-96">
+            <p className="text-xl mb-10">
               Now, 10 years after the event, the country is in a very different
               place. Still dealing with a recession that started in 2014 and the
               consequences of the largest corruption scandal in the world,
-              Brazil never took off as it expected. The legacy of the World Cup
-              also mirrors the country&apos;s new reality. Instead of heralding
-              a new era, the 2014 World Cup is mainly remembered in Brazil for
-              its massive spending on infrastructure (Besides the 7x1). No other
-              construction project captures that quite as well as the stadiums
-              built and renovated in time for the event. With many still
-              repaying their debts and some being completely underutilized, the
-              stadiums are the most palpable reminder of Brazil&apos;s late
-              2000s optimism, and what came of it.
+              Brazil never took off as it expected. And, the legacy of the World
+              Cup mirrors the country&apos;s new reality.
+            </p>
+
+            <p className="text-xl  mb-96">
+              Instead of heralding a new era, the 2014 event is mainly
+              remembered in Brazil for its massive spending on infrastructure.
+              No other construction project captures that quite as well as the
+              stadiums built and renovated in time for the event. With many
+              still repaying their debts and some being completely
+              underutilized, the stadiums are the most palpable reminder of
+              Brazil&apos;s late 2000s optimism, and what came of it.
             </p>
           </div>
+
           <ScrollyNumber className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center mt-36">
             <p className="text-xl mb-10 font-crimson">
@@ -135,6 +140,8 @@ export default function Page() {
               2000s optimism, and what came of it.
             </p>
           </div>
+          <ScrollyChart className="max-w-3xl align-center" />
+
           <ScrollyBar className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center">
             <p className="text-xl mb-10">

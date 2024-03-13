@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
 import Image from "next/image";
 import BarGraph from "../BarGraph";
+import PieChartCustom from "../PieChartCustom";
 
-const ScrollyBar = () => {
+const ScrollyChart = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   // TODO: Each card could be mapped intead, would look better.
@@ -16,10 +17,7 @@ const ScrollyBar = () => {
   return (
     <div className="relative mx-20">
       <div className="w-fit sticky top-1/3 left-1/2 z-0 text-center rounded-lg mx-10">
-        <BarGraph
-          currentIndex={currentStepIndex}
-          className=""
-        />
+        <PieChartCustom currentIndex={currentStepIndex} />
       </div>
 
       <Scrollama
@@ -34,7 +32,8 @@ const ScrollyBar = () => {
           <div className=" w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                Over 1 billion reais (~$300 million dollars) of debt remain.
+                In one of the arenas, Arena Amazonas, the situation is dire.
+                While the arena holds space for 44 Thousand people...
               </p>
             </div>
           </div>
@@ -46,7 +45,8 @@ const ScrollyBar = () => {
           <div className=" w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8  border-black ">
-                Hello, I would be the second card: Step of index {1}{" "}
+                ....75% of it has been vacant over its its soccer 9 games in the
+                main league in the last 3 years.
               </p>
             </div>
           </div>
@@ -58,7 +58,19 @@ const ScrollyBar = () => {
           <div className="w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8  border-black ">
-                Over 1 billion reais (~$300 million dollars) of debt remain.
+                And, of those seats, over 40% of the tickets are free.
+              </p>
+            </div>
+          </div>
+        </Step>
+        <Step
+          data={3}
+          key={4}
+        >
+          <div className=" w-1/2 z-10 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8  border-black ">
+                This happens in other arenas as well.
               </p>
             </div>
           </div>
@@ -68,4 +80,4 @@ const ScrollyBar = () => {
   );
 };
 
-export default ScrollyBar;
+export default ScrollyChart;

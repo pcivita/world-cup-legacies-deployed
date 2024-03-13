@@ -1,20 +1,22 @@
 import { BarChart } from "@mui/x-charts";
 
 export default function BarGraph({ currentIndex, dataTest }) {
-  const firstDataInitial = {
-    data: [0, 0, 0],
+  const firstData = {
+    data: [1, 0, 0],
     label: "Initial Cost",
   };
 
-  const secondDataInitial = {
+  const secondData = {
+    data: [1, 2, 0],
+    label: "Initial Cost",
+  };
+
+  const thirdData = {
     data: [1, 2, 3],
     label: "Initial Cost",
   };
 
-  const secondDataFinal = {
-    data: [2, 4, 6],
-    label: "Initial Cost",
-  };
+  const dataArray = [firstData, secondData, thirdData];
 
   return (
     <BarChart
@@ -22,10 +24,7 @@ export default function BarGraph({ currentIndex, dataTest }) {
         { scaleType: "band", data: ["Brasilia", "Fortaleza", "Porto Alegre"] },
       ]}
       yAxis={[{ min: 0, max: 10 }]}
-      series={[
-        currentIndex === 0 ? firstDataInitial : secondDataInitial,
-        currentIndex <= 2 ? firstDataInitial : secondDataFinal,
-      ]}
+      series={[dataArray[currentIndex]]}
       width={600}
       height={300}
       className="w-1/2"
