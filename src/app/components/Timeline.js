@@ -68,6 +68,11 @@ export default function Home() {
             mode="HORIZONTAL" 
             cardLess="true" 
             toolbarPosition="BOTTOM"
+            theme={{
+                primary: 'black',
+                secondary: 'white',
+                titleColor: 'black',
+            }}
         />
         ) : (<p>Loading...</p>)
         }

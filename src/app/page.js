@@ -21,7 +21,7 @@ export default function Home() {
       <div className="h-screen self-center">
         <div className="max-w-3xl self-center mx-auto">
           <h1 className="flex mt-28 text-center">World Cup Legacies</h1>
-          <p className="flex mt-4 mb-20 text-left items-center text-xl text-slate-700">
+          <p className="flex mt-4 mb-14 text-left items-center text-xl text-slate-700">
             As the most watched sporting event in the world, many countries can only dream of 
             hosting the World Cup. But to the few who did manage, its legacy is less glamorous 
             than promised. The last three host countries, Brazil, Russia, and Qatar, have all
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-row h-screen w-screen">
           <Link
             href="/Brazil"
-            className="h-1/2 bg-black w-1/3 m-0 overflow-hidden relative border-[#009739] border-4"
+            className="h-1/2 bg-black w-1/3 m-5 overflow-hidden relative border-[#009739] border-4"
           >
             <motion.div
               className="overflow-hidden h-full flex relative justify-center items-center"
@@ -43,11 +43,11 @@ export default function Home() {
                 src={BrazilImage}
                 alt=""
                 fill
-                objectFit="cover"
+                style={{objectFit:"cover"}}
                 className="relative z-0"
               />
               {/* Overlay text, centered with Tailwind CSS */}
-              <h2 className="z-10 text-white text-center p-4 bg-[#009739] shadow-xl">
+              <h2 className="z-10 text-white p-6 bg-[#009739] shadow-2xl">
                 Abandoned Stadiums <br /> Brazil, 2014
               </h2>
             </motion.div>
@@ -55,7 +55,7 @@ export default function Home() {
 
           <Link
             href="/Russia"
-            className="h-1/2 bg-green-400 w-1/3 m-0 overflow-hidden relative border-[#1C3578] border-4"
+            className="h-1/2 bg-green-400 w-1/3 m-5 overflow-hidden relative border-[#1C3578] border-4"
           >
             <motion.div
               className="overflow-hidden h-full flex relative justify-center items-center"
@@ -66,17 +66,17 @@ export default function Home() {
                 src={RussiaImage}
                 alt=""
                 fill
-                objectFit="cover"
+                style={{objectFit:"cover"}}
                 className="relative z-0"
               />
-              <h2 className="z-10 text-white text-center p-4 bg-[#1C3578] shadow-xl">
+              <h2 className="z-10 text-white p-6 bg-[#1C3578] shadow-2xl">
                 A Corrupted Environment <br /> Russia, 2018
               </h2>
             </motion.div>
           </Link>
           <Link
             href="/Qatar"
-            className="h-1/2 bg-red-400 w-1/3 m-0 overflow-hidden relative border-[#8A1538] border-4"
+            className="h-1/2 bg-red-400 w-1/3 m-5 overflow-hidden relative border-[#8A1538] border-4"
           >
             <motion.div
               className="overflow-hidden h-full flex relative justify-center items-center"
@@ -87,10 +87,10 @@ export default function Home() {
                 src={QatarImage}
                 alt=""
                 fill
-                objectFit="cover"
+                style={{objectFit:"cover"}}
                 className="relative z-0"
               />
-              <h2 className="z-10 text-white text-center p-4 bg-[#8A1538] shadow-xl">
+              <h2 className="z-10 text-white p-6 bg-[#8A1538] shadow-2xl">
                 Sustainability & Sportswashing <br /> Qatar, 2022
               </h2>
             </motion.div>
