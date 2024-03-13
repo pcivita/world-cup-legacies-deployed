@@ -28,7 +28,7 @@ export default function Page() {
       <div className="flex justify-start items-end relative w-full max-h-screen">
         <div className="absolute">
           <div className="relative z-10 p-4 m-12">
-            <h1 className="text-white text-left">Insert Title Here</h1>
+            <h1 className="text-white text-left">A Corrupted Environment</h1>
             <h2 className="text-white text-left">Russia, 2018</h2>
           </div>
         </div>
@@ -38,8 +38,8 @@ export default function Page() {
         </div>
       </div>
       <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
-            Kaliningrad Stadium was built on the last natural wetland in Kaliningrad, Russia. To build 
-            on top of the marshy soil, over a million tons of sand were poured over the wetland. (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/User:Rakoon">Rakoon</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad-stadium-march-2017-0001.jpg">Wikimedia Commons</Link>)
+            Over a million tons of sand were poured over the last natural wetland in Kaliningrad, Russia, 
+            to build Kaliningrad Stadium. (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/User:Rakoon">Rakoon</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad-stadium-march-2017-0001.jpg">Wikimedia Commons</Link>)
       </p>
 
       {/* Intro Text */}
@@ -80,7 +80,7 @@ export default function Page() {
         <p className="text-lg">
          Some blame the poor construction of the stadium on corruption. Financial troubles led the company 
          responsible for designing the stadium to declare bankruptcy, forcing the Russian government to step 
-         in. Several high-ranking officials were arrested and charged with embezzling money from the stadium, 
+         in. Several high-ranking <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://news.sky.com/story/world-cup-linked-oligarch-ziyavudin-magomedov-held-over-corruption-11311326">officials were arrested</Link> and charged with embezzling money from the stadium, 
          according to Sky News. 
         </p>
       </div>

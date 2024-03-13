@@ -70,7 +70,7 @@ export default function Home() {
                 className="relative z-0"
               />
               <h2 className="z-10 text-white text-center p-4 bg-[#1C3578] shadow-xl">
-                Environmental Concerns <br /> Russia, 2018
+                A Corrupted Environment <br /> Russia, 2018
               </h2>
             </motion.div>
           </Link>
@@ -102,7 +102,7 @@ export default function Home() {
       <div className="w-screen">
         <p className="max-w-3xl items-center mx-auto text-slate-700 text-xl pb-10 pt-10">
           Since the FIFA World Cup&apos;s inception, twenty-two tournaments have been held by 
-          eighteen unique host countries. 
+          eighteen unique host countries.
         </p>
         <Timeline />
       </div>

@@ -43,7 +43,8 @@ export default function Page() {
         </div>
       </div>
       <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
-            Stadium 974, the first temporary World Cup stadium ever built, was constructed out of 974 shipping containers in Doha, Qatar. (Photo by <a href="https://unsplash.com/@benkoorengevel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben Koorengevel</a> on <a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-CVg55UB571Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>)
+            Stadium 974, the first temporary World Cup stadium ever built, was constructed out of 974 shipping containers in Doha, Qatar. 
+            (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://unsplash.com/@benkoorengevel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben Koorengevel</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-CVg55UB571Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</Link>)
       </p>
       
       
@@ -229,7 +230,7 @@ export default function Page() {
           for the 2014 and 2018 World Cups, among other issues. The New York  
           Times <Link className="text-blue-600 dark:text-blue-500 hover:underline"
           href="https://www.nytimes.com/2022/11/25/world/middleeast/qatar-world-cup-criticism.html">reported</Link> that
-          many Qataris felt that the world employed a double standard when scrutinizing Qatar&apos;s preparations
+          many Qataris felt that many people around the world employed a double standard when scrutinizing Qatar&apos;s preparations
           for the tournament, and media coverage of the country&apos;s approach to the World Cup often
           included what many viewed as Orientalist stereotypes about Qataris, Arabs, and Muslims.
         </p>
