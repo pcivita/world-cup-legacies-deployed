@@ -48,7 +48,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div class="relative inline-block">
+        <div className="relative inline-block">
           <Image
             src={backgroundImage}
             alt=""
