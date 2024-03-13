@@ -63,7 +63,7 @@ export default function Page() {
           {/* Intro Text */}
           <div className="w-3xl self-center">
             <h2 className="text-black font-bold text-center">
-              Brazil's World Cup Legacy: A False Promise of Growth
+              Brazil&apos;s World Cup Legacy: A False Promise of Growth
             </h2>
           </div>
           <div className="max-w-3xl self-center">
