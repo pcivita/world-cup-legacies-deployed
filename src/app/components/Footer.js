@@ -9,10 +9,10 @@ export default function Footer () {
                     <p className="text-sm">Copyright &copy;2024</p>
                 </div>
                 <div className="flex flex-row float-left my-4 text-xl">
-                    <Link className="hover:text-black hover:scale-110 mr-10" href="/">Home</Link>
-                    <Link className="hover:text-black hover:scale-110 mx-10" href="/Brazil">Brazil</Link>
-                    <Link className="hover:text-black hover:scale-110 mx-10" href="/Russia">Russia</Link>
-                    <Link className="hover:text-black hover:scale-110 ml-10" href="/Qatar">Qatar</Link>
+                    <Link className="hover:text-black hover:scale-110 mr-3" href="/">Home</Link>
+                    <Link className="hover:text-black hover:scale-110 mx-3" href="/Brazil">Brazil</Link>
+                    <Link className="hover:text-black hover:scale-110 mx-3" href="/Russia">Russia</Link>
+                    <Link className="hover:text-black hover:scale-110 ml-3" href="/Qatar">Qatar</Link>
                 </div>
             </div>
       </div>
