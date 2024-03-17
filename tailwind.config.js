@@ -16,6 +16,12 @@ module.exports = {
         crimson: ['"Crimson Pro"', "serif"], // Assuming 'Crimson Pro' is the correct name
         inter: ["Inter", "sans-serif"],
       },
+      colors: {
+        "brazil-green": "#009739",
+        "russia-blue": "#1C3578",
+        "qatar-red": "#8A1538",
+        "qatar-green": "#478778",
+      }
     },
   },
   plugins: [],

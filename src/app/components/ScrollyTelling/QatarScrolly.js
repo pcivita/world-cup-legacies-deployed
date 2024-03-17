@@ -24,7 +24,7 @@ const ScrollyTelling = () => {
         <Step data={0} key={0}>
           <div className="h-screen">
             <Line y1={200} y2={1000} />
-            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 Around 95% of Qatar&apos;s workforce is made up of migrant workers, mostly from the 
                 Philippines and South Asia, who go to Qatar in search of better job prospects. 
@@ -38,7 +38,7 @@ const ScrollyTelling = () => {
         <Step data={1} key={1}>
           <div className="h-screen">
               <Line y1={0} y2={1000} />
-              <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+              <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 In the decade leading up to the World Cup, there was an influx of work needed to prepare 
                 for the tournament. Qatar raised the minimum wage to 1000 QAR ($274 USD) per month in 2020, but before 
@@ -52,7 +52,7 @@ const ScrollyTelling = () => {
         <Step data={2} key={2}>
           <div className="h-screen">
             <Line y1={0} y2={1000} />
-            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 Migrant workers toiled year-round to construct stadiums, the metro system, accommodations, 
                 and more for the World Cup, often in extreme heat with few breaks. Temperatures in Qatar can 
@@ -66,7 +66,7 @@ const ScrollyTelling = () => {
         <Step data={3} key={3}>
           <div className="h-screen">
             <Line y1={0} y2={1000} />
-            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 Hassan Al-Thawadi, Secretary General of the Supreme Committee for Delivery and Legacy, the 
                 organization responsible for facilitating Qatar&apos;s preparations for the World Cup, estimates that 
@@ -82,7 +82,7 @@ const ScrollyTelling = () => {
         <Step data={4} key={4}>
           <div className="h-screen">
             <Line y1={0} y2={1000} />
-            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 As the tournament wrapped up, the labor market slowed down. Employers reacted to the slowdown by underpaying 
                 their workers and denying them end-of-service benefits. Some workers report feeling trapped—leaving the country
@@ -95,12 +95,12 @@ const ScrollyTelling = () => {
         <Step data={5} key={5}>
           <div className="h-screen">
             <Line y1={0} y2={1000} />
-            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+            <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 Qatar&apos;s Workers&apos; Support Fund has successfully paid some workers what they were owed, the 
                 Supreme Committee&apos;s Universal Reimbursement Scheme reimbursed some workers for recruitment fees, 
                 and nearly two dozen companies have created life insurance programs to compensate families of 
-                deceased workers. However, for most workers, their compensation still hasn&apos;t materialized.
+                deceased workers. However, for many workers, their compensation still hasn&apos;t materialized.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ const ScrollyTelling = () => {
         <Step data={6} key={6}>
           <div>
               <Line y1={0} y2={100} />
-              <div className="w-1/2 flex shadow-xl ml-10 border-2 border-[#478778]">
+              <div className="w-1/2 flex shadow-xl ml-10 border-2 border-qatar-green">
               <p className="p-8 text-lg">
                 As of November 20, 2023, Qatar and FIFA have failed to address these abuses meaningfully.
               </p>
