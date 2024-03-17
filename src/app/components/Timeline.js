@@ -42,7 +42,7 @@ export default function Home() {
               }, {
                   title: "France, 1998",
               }, {
-                  title: "Japan/South Korea, 2002",
+                  title: "Japan and South Korea, 2002",
               }, {
                   title: "Germany, 2006",
               }, {
@@ -55,7 +55,7 @@ export default function Home() {
                   title: "Qatar, 2022",
               },
               ];
-            setItems(newItems);
+            setItems(newItems.reverse());
           }, 1000);  
     }, []);
 
@@ -66,15 +66,14 @@ export default function Home() {
             className="text-center" 
             items={items} 
             mode="HORIZONTAL" 
-            cardLess="true" 
-            toolbarPosition="BOTTOM"
+            cardLess="true"
             theme={{
-                primary: 'black',
+                primary: 'gray',
                 secondary: 'white',
                 titleColor: 'black',
             }}
         />
-        ) : (<p>Loading...</p>)
+        ) : (<p className="text-center italic">Loading...</p>)
         }
       </div>
     )

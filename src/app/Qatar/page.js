@@ -28,9 +28,11 @@ export default function Page() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Header />
+      <Header home={false} />
       <BackToTop className="fixed w-full h-20 cursor-pointer border-5 border-black" />
-      <div className="flex justify-start items-end relative w-full max-h-screen">
+
+      {/* Front image and caption */}
+      <div className="flex justify-start items-end relative w-full max-h-screen font-crimson">
         <div className="absolute">
           <div className="relative z-10 p-4 m-12">
             <h1 className="text-white text-left">Sustainability and Sportswashing</h1>
@@ -44,15 +46,25 @@ export default function Page() {
       </div>
       <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
             Stadium 974, the first temporary World Cup stadium ever built, was constructed out of 974 shipping containers in Doha, Qatar. 
-            (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://unsplash.com/@benkoorengevel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben Koorengevel</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-CVg55UB571Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</Link>)
+            (Photo by <Link 
+              className="text-blue-600 dark:text-blue-500 hover:underline" 
+              href="https://unsplash.com/@benkoorengevel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+              target="_blank"
+            >
+              Ben Koorengevel
+            </Link> on <Link 
+              className="text-blue-600 dark:text-blue-500 hover:underline" 
+              href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-CVg55UB571Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" 
+              target="_blank"
+            >
+              Unsplash
+            </Link>)
       </p>
-      
       
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
-        <h2 className="font-bold text-left text-[#8A1538]">
-          Qatar&apos;s World Cup Legacy: Innovation at the Expense of
-          Workers&apos; Rights
+        <h2 className="font-bold text-left text-qatar-red">
+          Innovation at the Expense of Workers&apos; Rights
         </h2>
       </div>
       <div className="max-w-3xl self-center">
@@ -64,6 +76,15 @@ export default function Page() {
           in history. It was also hugely controversial: Qatar won the bid to host the tournament amid 
           calls of corruption within the Fédération Internationale de Football Association (FIFA) and 
           has been accused of committing several human rights violations against their migrant workers. 
+          Like Russia in 2018, Qatar has been <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline" 
+            href="https://www.nytimes.com/2022/12/14/opinion/world-cup-qatar-sportswashing.html" 
+            target="_blank"
+          >
+            accused
+          </Link> of 
+          sportswashing, or using the World Cup to garner good publicity to distract from
+          accusations of unethical conduct.
         </p>
       </div>
 
@@ -78,7 +99,7 @@ export default function Page() {
               alt="Three figures graphic"
             />
           </div>
-          <p className="text-[#478778] text-5xl font-bold">3.4 million</p>
+          <p className="text-qatar-green text-5xl font-bold">3.4 million</p>
           <p className="text-[#36454F] italic">
             people attended World Cup events in Qatar
           </p>
@@ -92,7 +113,7 @@ export default function Page() {
               alt="Money bag graphic"
             />
           </div>
-          <p className="text-[#478778] text-5xl font-bold">$7.5 billion</p>
+          <p className="text-qatar-green text-5xl font-bold">$7.5 billion</p>
           <p className="text-[#36454F] italic">
             earned by FIFA in revenue (USD)
           </p>
@@ -106,7 +127,7 @@ export default function Page() {
               alt="Airplane graphic"
             />
           </div>
-          <p className="text-[#478778] text-5xl font-bold">1.4 million</p>
+          <p className="text-qatar-green text-5xl font-bold">1.4 million</p>
           <p className="text-[#36454F] italic">
             people traveled to Qatar for the tournament
           </p>
@@ -115,16 +136,20 @@ export default function Page() {
 
 
       <div className="max-w-3xl self-center">
-        <p className="text-2xl text-[#8A1538] font-bold">
+        <p className="text-2xl text-qatar-red font-bold">
           Qatar&apos;s World Cup Proposal
         </p>
         <br />
         <p className="text-lg">
           Qatar hoped to use the World Cup to bolster their reputation worldwide, to 
           achieve global recognition, and to bridge the gap between the West and the Middle East.
-          In their <Link className="text-blue-600 dark:text-blue-500 hover:underline"
-          href="https://digitalhub.fifa.com/m/3041e390c9c0afea/original/fd4w8qgexnrxmquwsb7h-pdf.pdf">winning bid</Link> to 
-          host the 2022 FIFA World Cup, the Qatar 2022 Bid 
+          In their <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline"
+            href="https://digitalhub.fifa.com/m/3041e390c9c0afea/original/fd4w8qgexnrxmquwsb7h-pdf.pdf" 
+            target="_blank"
+          >
+            winning bid
+          </Link> to host the 2022 FIFA World Cup, the Qatar 2022 Bid 
           Committee proposed that they would host the first completely carbon-neutral 
           World Cup; they would embark on large-scale infrastructure projects to revamp 
           their public transport, hospitality, and telecommunications systems to prepare 
@@ -143,33 +168,39 @@ export default function Page() {
       </div>
 
       {/* Flip cards */}
-      
       <div className="max-w-5xl self-center">
         <div className="float-left w-1/3 h-500 p-10">
           <FlipCard
             frontText="Was it the first carbon-neutral World Cup?"
             backText="It&apos;s unlikely. On June 7, 2023, the Swiss Fairness Commission found that FIFA made false and misleading statements about the environmental impact of the tournament. FIFA had no definitive methods for measuring the sustainability of the tournament, and therefore cannot know that it was carbon-neutral."
+            backColor="no"
           />
         </div>
         <div className="float-left w-1/3 h-500 p-10">
           <FlipCard
             frontText="Has Qatar dismantled and/or repurposed any of their stadiums since the World Cup ended?"
             backText="Not yet, but they have an excuse: Qatar recently hosted another major football tournament, the AFC Asian Cup, in January and February of 2024. Presumably, they will begin renovating and repurposing their stadiums now that the tournament is over."
+            backColor="maybe"
           />
         </div>
         <div className="float-right w-1/3 h-500 p-10">
           <FlipCard
             frontText="Did Qatar develop its planned public infrastructure projects in advance of the World Cup?"
             backText="Yes. The newly built Doha Metro opened in May 2019 and has been a huge success. The government also built new accommodations, improved the telecommunications network, and bolstered their tourism industry."
+            backColor="yes"
           />
         </div>
       </div>
 
       <div className="max-w-3xl self-center">
         <p className="text-lg">
-          Winning the World Cup bid served as the catalyst for Qatar&apos;s <Link className="text-blue-600 dark:text-blue-500 hover:underline"
-          href="https://www.gco.gov.qa/en/about-qatar/national-vision2030/">National Vision 2030</Link>, an
-          ambitious initiative to diversify the country&apos;s economy and usher it into the modern age. 
+          Winning the World Cup bid served as the catalyst for Qatar&apos;s <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline"
+            href="https://www.gco.gov.qa/en/about-qatar/national-vision2030/" 
+            target="_blank"
+          >
+            National Vision 2030
+          </Link>, an ambitious initiative to diversify the country&apos;s economy and usher it into the modern age. 
           The plan centers human, social, environmental, and economic development, and Qatar used the 
           National Vision to argue that they would host the World Cup with the future in mind. Their preparations, 
           they claimed, would be sustainable, and would benefit the country long after the end of the tournament.
@@ -185,6 +216,7 @@ export default function Page() {
         <br/> <br/>
       </div>
 
+      {/* Doha metro ridership graphic */}
       <div className="max-w-3xl self-center">
         <Image
           src={ridershipTimeline}
@@ -210,7 +242,7 @@ export default function Page() {
           possible, but have been reportedly subject to several human rights violations in the process.
         </p>
         <br/> <br/>
-        <p className="text-2xl text-[#8A1538] font-bold">
+        <p className="text-2xl text-qatar-red font-bold">
           The Life of a World Cup Migrant Worker
         </p>
         <br />
@@ -228,14 +260,17 @@ export default function Page() {
           The plight of workers in countries hosting World Cups is not unique to Qatar.
           Brazil and Russia have also been accused of mistreating the workers they employed to prepare
           for the 2014 and 2018 World Cups, among other issues. The New York  
-          Times <Link className="text-blue-600 dark:text-blue-500 hover:underline"
-          href="https://www.nytimes.com/2022/11/25/world/middleeast/qatar-world-cup-criticism.html">reported</Link> that
+          Times <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline"
+            href="https://www.nytimes.com/2022/11/25/world/middleeast/qatar-world-cup-criticism.html" 
+            target="_blank">reported</Link> that
           many Qataris felt that many people around the world employed a double standard when scrutinizing Qatar&apos;s preparations
           for the tournament, and media coverage of the country&apos;s approach to the World Cup often
           included what many viewed as Orientalist stereotypes about Qataris, Arabs, and Muslims.
         </p>
       </div>
 
+      {/* Image slider */}
       <div className="max-w-3xl self-center">
         <div className="flex justify-center">
           <Slider beforeImage={beforeImage} afterImage={afterImage} />
@@ -248,11 +283,10 @@ export default function Page() {
       </div>
 
       <div className="max-w-3xl self-center">
-        <p className="text-2xl text-[#8A1538] font-bold">
+        <p className="text-2xl text-qatar-red font-bold">
           Qatar&apos;s World Cup Legacy
         </p>
         <br/>
-
         <p className="text-lg mb-10">
           Qatar succeeded at achieving global—though not necessarily wholly positive—recognition, and the World Cup 
           helped them take steps to diversify their fossil-fuel-dominated economy into the tourism and sports industries. 

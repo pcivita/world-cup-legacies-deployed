@@ -25,11 +25,11 @@ export default function Page() {
 
   return (
     <div className="flex flex-col gap-10">
-      <Header />
+      <Header home={false} />
       <BackToTop className="fixed w-full h-20 cursor-pointer border-5 border-black" />
       <div className="flex justify-start items-end relative w-full max-h-screen">
         <div className="absolute">
-          <div className="relative z-10 p-4 m-12">
+          <div className="relative z-10 p-4 m-12 font-crimson">
             <h1 className="text-white text-left">A Corrupted Environment</h1>
             <h2 className="text-white text-left">Russia, 2018</h2>
           </div>
@@ -41,13 +41,25 @@ export default function Page() {
       </div>
       <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
             Over a million tons of sand were poured over the last natural wetland in Kaliningrad, Russia, 
-            to build Kaliningrad Stadium. (Photo by <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/User:Rakoon">Rakoon</Link> on <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad-stadium-march-2017-0001.jpg">Wikimedia Commons</Link>)
+            to build Kaliningrad Stadium. (Photo by <Link 
+              className="text-blue-600 dark:text-blue-500 hover:underline" 
+              href="https://commons.wikimedia.org/wiki/User:Rakoon" 
+              target="_blank"
+              >
+                Rakoon
+              </Link> on <Link 
+                className="text-blue-600 dark:text-blue-500 hover:underline" 
+                href="https://commons.wikimedia.org/wiki/File:Kaliningrad-stadium-march-2017-0001.jpg" 
+                target="_blank"
+              >
+                Wikimedia Commons
+              </Link>)
       </p>
 
       {/* Intro Text */}
       <div className="max-w-3xl self-center">
-        <h2 className="font-bold text-left text-[#8A1538]">
-          Russia&apos;s World Cup Legacy: Environmental Issues, Corruption, and Workers&apos; Rights
+        <h2 className="font-bold text-left text-russia-blue">
+          Environmental Issues, Corruption, and Workers&apos; Rights
         </h2>
       </div>
       <div className="max-w-3xl self-center">
@@ -59,7 +71,14 @@ export default function Page() {
         </p>
         <div className="flex flex-col float-right items-center text-wrap mt-8 mx-8 max-w-96">
           <Image src={map} alt="Map of Kaliningrad" width={368} height={202}/>
-          <p className="text-slate-900 italic text-wrap text-center max-w-1/4 mt-2"> Kaliningrad Oblast is circled in red. (Photo from <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad_in_Russia.svg">Wikimedia Commons</Link>) </p>
+          <p className="text-slate-900 italic text-wrap text-center max-w-1/4 mt-2"> Kaliningrad Oblast is circled in red. (Photo from <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline" 
+            href="https://commons.wikimedia.org/wiki/File:Kaliningrad_in_Russia.svg" 
+            target="_blank"
+            >
+              Wikimedia Commons
+            </Link>) 
+          </p>
         </div>
         <br/>
         <p className="text-lg">
@@ -75,9 +94,13 @@ export default function Page() {
           year after the World Cup ended, the stadium was reportedly in danger of sinking due to the 
           unstable ground. After the Russian National Team played a match against Kazakhstan at Kaliningrad 
           Stadium towards the end of 2020, the sewage and drainage systems were found to be in poor condition, 
-          leading to <Link className="text-blue-600 dark:text-blue-500 hover:underline" 
-          href="https://www.sport-express.ru/football/euro/2020/reviews/rossiya-kazahstan-stadion-v-kaliningrade-gde-sygraet-sbornaya-provalivaetsya-1584215/?fbclid=IwAR24ZurgbdCarfBFephwJKvXs0jDRDgbK0XSzKK9IcHV-egcMX2cDcIv5vQ">cracks and bumps</Link> in 
-          the ground where water had pushed up against the asphalt. The Moscow Times reported that the 
+          leading to <Link 
+            className="text-blue-600 dark:text-blue-500 hover:underline" 
+            href="https://www.sport-express.ru/football/euro/2020/reviews/rossiya-kazahstan-stadion-v-kaliningrade-gde-sygraet-sbornaya-provalivaetsya-1584215/?fbclid=IwAR24ZurgbdCarfBFephwJKvXs0jDRDgbK0XSzKK9IcHV-egcMX2cDcIv5vQ" 
+            target="_blank"
+          >
+            cracks and bumps
+          </Link> in the ground where water had pushed up against the asphalt. The Moscow Times reported that the 
           government set aside 40 million rubles, or around $440,000 USD, to renovate the stadium in 2019, 
           but there is no record of that renovation occurring.
         </p>
@@ -85,8 +108,13 @@ export default function Page() {
         <p className="text-lg">
          Some blame the poor construction of the stadium on corruption. Financial troubles led the company 
          responsible for designing the stadium to declare bankruptcy, forcing the Russian government to step 
-         in. Several high-ranking <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://news.sky.com/story/world-cup-linked-oligarch-ziyavudin-magomedov-held-over-corruption-11311326">officials were arrested</Link> and charged with embezzling money from the stadium, 
-         according to Sky News. 
+         in. Several high-ranking <Link 
+          className="text-blue-600 dark:text-blue-500 hover:underline" 
+          href="https://news.sky.com/story/world-cup-linked-oligarch-ziyavudin-magomedov-held-over-corruption-11311326" 
+          target="_blank"
+        >
+          officials were arrested
+        </Link> and charged with embezzling money from the stadium, according to Sky News. 
         </p>
       </div>
 

@@ -33,7 +33,7 @@ function useBoundedScroll(bounds) {
   return { scrollYBounded, scrollYBoundedProgress };
 }
 
-export default function Header() {
+export default function Header( {home} ) {
   let { scrollYBoundedProgress } = useBoundedScroll(400);
   let scrollYBoundedProgressThrottled = useTransform(
     scrollYBoundedProgress,
@@ -41,9 +41,15 @@ export default function Header() {
     [0, 0, 1]
   );
 
+  let isClickable = useTransform(
+    scrollYBoundedProgressThrottled,
+    [0, 1],
+    [1, 0]
+  );
+
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-1 overflow-hidden text-slate-600">
-      <div className=" z-50 flex-1 overflow-y-scroll">
+    <div className="mx-auto flex w-full max-w-3xl flex-1 overflow-hidden text-slate-600 font-crimson">
+      <div className="z-50 flex-1 overflow-y-scroll">
         <motion.header
           style={{
             height: useTransform(
@@ -68,7 +74,7 @@ export default function Header() {
                   [1, 0.9]
                 ),
               }}
-              className="flex origin-left items-center text-xl font-semibold uppercase"
+              className={`flex text-xl origin-left font-semibold uppercase ${home ? 'text-white' : 'text-slate-600'}`}
             >
               <Link href="/">
                 <span className="-ml-1 text-2xl tracking-[-.075em]">
@@ -84,7 +90,7 @@ export default function Header() {
                   [1, 0]
                 ),
               }}
-              className="flex space-x-4 text-xl font-medium text-slate-400"
+              className="flex space-x-4 text-xl font-medium text-slate-400 place-items-end"
             >
               <motion.a
                 whileHover={{ scale: 1.05, color: "black" }}

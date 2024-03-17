@@ -1,28 +1,32 @@
 function Point({ currentIndex }) {
   let color = "#8A1538";
+  let date = "2010-2022";
 
   if (currentIndex == 0) {
     color = "white";
   } else if (currentIndex == 1) {
-    color = "#fad9e2";
+    color = "#fef2f2";
   } else if (currentIndex == 2) {
-    color = "#f6bccb";
+    color = "#fee2e2";
   } else if (currentIndex == 3) {
-    color = "#f08fa9";
+    color = "#fecaca";
   } else if (currentIndex == 4) {
-    color = "#ea6286";
+    color = "#fca5a5";
+    date = "2022-Present";
   } else if (currentIndex == 5) {
-    color = "#ca1c4a";
+    color = "#f87171";
+    date = "2022-Present";
   } else if (currentIndex == 6) {
-    color = "#8A1538";
+    color = "#ef4444";
+    date = "2023-Present";
   }
 
 
   return (
     <div>
       <svg className="text-bold">
-        <circle r="50" cx="150" cy="75" fill={color} stroke="#8A1538" strokeWidth="3"/>
-        <text x="50%" y="50%" textAnchor="middle" fill="black" fontSize="30px" dy=".3em">{currentIndex + 1}</text>
+        <circle r="60" cx="150" cy="75" fill={color} stroke="#8A1538" strokeWidth="3"/>
+        <text className="m-2" x="50%" y="50%" textAnchor="middle" fill="black" dy=".3em">{date}</text>
       </svg>
     </div>
   );

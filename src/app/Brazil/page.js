@@ -9,6 +9,8 @@ import Header from "../components/Header";
 import InteractiveBar from "../components/InteractiveBar";
 import ScrollyChart from "../components/ScrollyTelling/ScrollyChart";
 import { PieChart } from "@mui/x-charts/PieChart";
+import BackToTop from "../components/ToTop";
+import Footer from "../components/Footer";
 
 // TODO: add more margin to Title
 // TODO: PIE CHARTS https://mui.com/x/react-charts/pie/
@@ -38,6 +40,7 @@ export default function Page() {
   return (
     <div className="flex flex-col gap-10">
       <Header />
+      <BackToTop className="fixed w-full h-20 cursor-pointer border-5 border-black" />
       <div className="flex justify-start items-end relative w-full max-h-screen">
         <div className="absolute">
           <div className="relative z-10 p-4 m-12">
@@ -187,6 +190,7 @@ export default function Page() {
           </div>
         </>
       )}
+      <Footer />
     </div>
   );
 }
