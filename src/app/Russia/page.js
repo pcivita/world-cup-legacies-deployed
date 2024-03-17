@@ -9,7 +9,9 @@ import BackToTop from "../components/ToTop";
 import Footer from "../components/Footer";
 import beforeImage from "./images/kaliningrad_oct_2011.jpg";
 import afterImage from "./images/kaliningrad_oct_2018.jpg";
+import map from "./images/kaliningrad_map.png";
 import Link from "next/link";
+import { m } from "framer-motion";
 
 
 export default function Page() {
@@ -48,7 +50,6 @@ export default function Page() {
           Russia&apos;s World Cup Legacy: Environmental Issues, Corruption, and Workers&apos; Rights
         </h2>
       </div>
-
       <div className="max-w-3xl self-center">
         <p className="text-lg">
           Nestled between Poland, Lithuania, and the Baltic Sea, Kaliningrad Oblast is the westernmost 
@@ -56,13 +57,17 @@ export default function Page() {
           built in the three years preceding the tournament for an estimated cost of $200 million USD. It 
           has been plagued with difficulties since.
         </p>
+        <div className="flex flex-col float-right items-center text-wrap mt-8 mx-8 max-w-96">
+          <Image src={map} alt="Map of Kaliningrad" width={368} height={202}/>
+          <p className="text-slate-900 italic text-wrap text-center max-w-1/4 mt-2"> Kaliningrad Oblast is circled in red. (Photo from <Link className="text-blue-600 dark:text-blue-500 hover:underline" href="https://commons.wikimedia.org/wiki/File:Kaliningrad_in_Russia.svg">Wikimedia Commons</Link>) </p>
+        </div>
         <br/>
         <p className="text-lg">
-          The stadium was constructed on Oktyabrsky Island, an area surrounded by the Pregolya River in 
+          Now known as Rostec Arena, the stadium was constructed on Oktyabrsky Island, an area surrounded by the Pregolya River in 
           Kaliningrad. It was also the last natural wetland in the city, a marshy region that protected 
           water-bird colonies from human development and helped filter pollution from the river. Over a 
           million tons of sand were poured over the swamp to stabilize the foundation for the construction 
-          of the stadium, which has a capacity of 33,973 seats. 
+          of the stadium. The project was completed in 2018, just in time for the World Cup.
         </p>
         <br/>
         <p className="text-lg">
