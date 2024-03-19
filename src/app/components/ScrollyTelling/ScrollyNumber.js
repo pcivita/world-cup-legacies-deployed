@@ -35,22 +35,23 @@ const ScrollyNumber = () => {
       </motion.div>
 
       <Scrollama offset={0.5} onStepEnter={onStepEnter} className=" z-10">
-        <Step data={0} key={0}>
-          <div className=" w-1/2 z-10 flex justify-center">
-            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
-              <p className="p-8  border-black ">
-                Over 1 billion reais (~$300 million dollars) of debt remain.
-              </p>
-            </div>
-          </div>
-        </Step>
         <Step data={1} key={1}>
           <div className="w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                The Debt itself is more than what one of the States that build a
-                stadium government asks for in their plan to end hunger. 4th
-                Most Populous state with over 14 million people.
+                Amongst its loans, BNDES loaned over R$350 million to the State
+                of Bahia&apos;s stadium construction.
+                {/* https://www.brasildefato.com.br/2021/04/19/oposicao-quer-r-1-bi-para-combate-a-fome-governo-usou-so-metade-do-previsto-em-2020 */}
+              </p>
+            </div>
+          </div>
+        </Step>
+
+        <Step data={1} key={1}>
+          <div className="w-1/2 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8 border-black ">
+                A number greater than Bahia&apos;s plan to end hunger.
                 {/* https://www.brasildefato.com.br/2021/04/19/oposicao-quer-r-1-bi-para-combate-a-fome-governo-usou-so-metade-do-previsto-em-2020 */}
               </p>
             </div>
@@ -61,13 +62,19 @@ const ScrollyNumber = () => {
           <div className="w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                And where 22% of the population live with less than 20$ (R$89) a
-                month. In its initial estimates, BNDES found all stadiums to be
-                fit to pay back this debt in 15 years. By 2024, however, around
-                one billion reais remain to be paid. While some stadiums have
-                completely paid off their portion of the debt, many lag
-                significantly behind.
+                While some stadiums have completely paid off their portion of
+                the debt, many lag significantly behind.
                 {/* https://www.brasildefato.com.br/2021/04/19/oposicao-quer-r-1-bi-para-combate-a-fome-governo-usou-so-metade-do-previsto-em-2020 */}
+              </p>
+            </div>
+          </div>
+        </Step>
+
+        <Step data={0} key={0}>
+          <div className=" w-1/2 z-10 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8  border-black ">
+                By 2024, however, around one billion reais remain to be paid.
               </p>
             </div>
           </div>

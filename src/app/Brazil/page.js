@@ -82,31 +82,33 @@ export default function Page() {
               and what came of it.
             </p>
 
-            <p className="text-xl mb-10 ">
+            <p className="text-xl mb-80 ">
               To build and renovate 13 stadiums by the time of the World Cup,
               the Brazilian government decided to step in and help finance this
               operation. Through a national bank called the National Bank for
               Economic and Social Development (shortened to BNDES in
               Portuguese), it loaned almost 4 billion reais (approximately 800
               thousand dollars in today&apos;s exchange) of public money to the
-              stadiums.
+              stadiums. In its initial estimates, BNDES found all stadiums to be
+              fit to pay back this debt in 15 years.
             </p>
           </div>
           <ScrollyNumber className="max-w-3xl align-center" />
           <ScrollyBar className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center">
             <p className="text-xl mb-10 ">
-              One of the reasons for this is due to final costs grossly
-              surpassing the original estimates. For example, Beira-Rio stadium,
-              built in the city of Porto Alegre, had an original estimated cost
-              of 154 million reais. By the end, the actual construction cost was
-              more than double, totaling 366.3 million reais. While not all
-              stadiums compared this badly, final costs were, on average, around
-              200 million reais more than the estimates.
+              Another reason why there is so much leftover debt is due to
+              accrued fees due to missing payments. Take for example Arena
+              Corinthians, built in the major city of São Paulo and meant to be
+              the home of one of its most popular teams. While its final cost
+              was only 260 million reais more than the original estimate, the
+              debt it still needs to pay is over 600 million reais. That alone
+              is almost as high as the original estimated cost of building the
+              stadium. While they have recently demonstrated their intent to pay
+              the debt in full, it has gotten to the point where it has been
+              affecting the actual team’s performance, as money that could have
+              been spent bettering its roster has gone to paying off its debt.
             </p>
-          </div>
-
-          <div className="max-w-3xl self-center">
             <p className="text-xl mb-10 ">
               With all of these issues, many stadiums have resorted to
               renegotiating their original contracts, trying to move the

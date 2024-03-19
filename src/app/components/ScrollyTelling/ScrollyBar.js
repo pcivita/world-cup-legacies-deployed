@@ -37,59 +37,53 @@ const ScrollyBar = () => {
   return (
     <div className="relative mx-20">
       <div className="w-fit sticky top-1/3 left-1/2 z-0 text-center rounded-lg mx-10">
-        <BarGraph
-          currentIndex={currentStepIndex}
-          className=""
-          data={curData}
-        />
+        <BarGraph currentIndex={currentStepIndex} className="" data={curData} />
         <h3>Current State: {selectedKey}</h3>
       </div>
 
-      <Scrollama
-        offset={0.5}
-        onStepEnter={onStepEnter}
-        className="z-10"
-      >
-        <Step
-          data={{ data: [0, 0, 0] }}
-          key={0}
-        >
+      <Scrollama offset={0.5} onStepEnter={onStepEnter} className="z-10">
+        <Step data={{ data: [0, 0, 0] }} key={0}>
           <div className=" w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                Over 1 billion reais (~$300 million dollars) of debt remain.
+                One of the reasons for this is due to final costs grossly
+                surpassing the original estimates.
               </p>
             </div>
           </div>
         </Step>
-        <Step
-          data={{ data: [8.2, 0, 0] }}
-          key={1}
-        >
+        <Step data={{ data: [8.2, 0, 0] }} key={1}>
           <div className=" w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                Over 1 billion reais (~$300 million dollars) of debt remain.
+                For example, Beira-Rio stadium, built in the city of Porto
+                Alegre, had an original estimated cost of 154 million reais.
               </p>
             </div>
           </div>
         </Step>
-        <Step
-          data={{ data: [8.2, 10.5, 0] }}
-          key={2}
-        >
+        <Step data={{ data: [8.2, 10.5, 0] }} key={2}>
           <div className=" w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8  border-black ">
-                Hello, I would be the second card: Step of index {1}{" "}
+                By the end, the actual construction cost was more than double,
+                totaling 366.3 million reais.
               </p>
             </div>
           </div>
         </Step>
-        <Step
-          data={{ data: [8.2, 10.5, 6.2] }}
-          key={3}
-        >
+
+        <Step data={{ data: [8.2, 10.5, 0] }} key={2}>
+          <div className=" w-1/2 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8  border-black ">
+                While not all stadiums compared this badly, final costs were, on
+                average, around 200 million reais more than the estimates.
+              </p>
+            </div>
+          </div>
+        </Step>
+        <Step data={{ data: [8.2, 10.5, 6.2] }} key={3}>
           <div className="w-1/2 z-10 flex justify-center">
             <div className="w-2/3 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center gap-4 px-4">
               {Object.keys(dataDict).map((key) => (
