@@ -37,43 +37,91 @@ const ScrollyBar = () => {
   return (
     <div className="relative mx-20">
       <div className="w-fit sticky top-1/3 left-1/2 z-0 text-center rounded-lg mx-10">
-        <BarGraph currentIndex={currentStepIndex} className="" data={curData} />
+        <BarGraph
+          currentIndex={currentStepIndex}
+          className=""
+          data={curData}
+        />
         <h3>Current State: {selectedKey}</h3>
       </div>
 
-      <Scrollama offset={0.5} onStepEnter={onStepEnter} className="z-10">
-        <Step data={{ data: [0, 0, 0] }} key={0}>
+      <Scrollama
+        offset={0.5}
+        onStepEnter={onStepEnter}
+        className="z-10"
+      >
+        <Step
+          data={{ data: [0, 0, 0] }}
+          key={0}
+        >
           <div className=" w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                One of the reasons for this is due to final costs grossly
-                surpassing the original estimates.
+                While some stadiums have completely paid off their portion of
+                the debt, many lag significantly behind.
+                {/* https://www.brasildefato.com.br/2021/04/19/oposicao-quer-r-1-bi-para-combate-a-fome-governo-usou-so-metade-do-previsto-em-2020 */}
               </p>
             </div>
           </div>
         </Step>
-        <Step data={{ data: [8.2, 0, 0] }} key={1}>
+        <Step
+          data={{ data: [0, 0, 0] }}
+          key={0}
+        >
           <div className=" w-1/2 z-10 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8 border-black ">
-                For example, Beira-Rio stadium, built in the city of Porto
-                Alegre, had an original estimated cost of 154 million reais.
+                Take for example Arena Corinthians, built in the major city of
+                São Paulo and meant to be the home of one of its most popular
+                teams.
               </p>
             </div>
           </div>
         </Step>
-        <Step data={{ data: [8.2, 10.5, 0] }} key={2}>
+        <Step
+          data={{ data: [8.2, 0, 0] }}
+          key={1}
+        >
+          <div className=" w-1/2 z-10 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8 border-black ">
+                While its final cost was only 260 million reais more than the
+                original estimate
+              </p>
+            </div>
+          </div>
+        </Step>
+        <Step
+          data={{ data: [8.2, 10.5, 0] }}
+          key={2}
+        >
           <div className=" w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8  border-black ">
-                By the end, the actual construction cost was more than double,
-                totaling 366.3 million reais.
+                the debt it still needs to pay is over 600 million reais.
               </p>
             </div>
           </div>
         </Step>
 
-        <Step data={{ data: [8.2, 10.5, 0] }} key={2}>
+        <Step
+          data={{ data: [8.2, 10.5, 0] }}
+          key={2}
+        >
+          <div className=" w-1/2 flex justify-center">
+            <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
+              <p className="p-8  border-black ">
+                That alone is almost as high as the original estimated cost of
+                building the stadium.
+              </p>
+            </div>
+          </div>
+        </Step>
+
+        <Step
+          data={{ data: [8.2, 10.5, 0] }}
+          key={2}
+        >
           <div className=" w-1/2 flex justify-center">
             <div className="w-1/2 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center">
               <p className="p-8  border-black ">
@@ -83,7 +131,10 @@ const ScrollyBar = () => {
             </div>
           </div>
         </Step>
-        <Step data={{ data: [8.2, 10.5, 6.2] }} key={3}>
+        <Step
+          data={{ data: [8.2, 10.5, 6.2] }}
+          key={3}
+        >
           <div className="w-1/2 z-10 flex justify-center">
             <div className="w-2/3 h-40 bg-gray-200 mb-96 shadow-md rounded-lg text-center flex items-center justify-center gap-4 px-4">
               {Object.keys(dataDict).map((key) => (

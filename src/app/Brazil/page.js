@@ -63,7 +63,7 @@ export default function Page() {
               inflation, lower inequality, and better living standards, the
               country was poised to become one of the key global players in the
               coming decades. And hosting the World Cup was the perfect way to
-              demonstrate that. Spending an estimated 31.2 billion reais (around
+              demonstrate it. Spending an estimated 31.2 billion reais (around
               6.3 billion dollars) in preparation for the event, it seemed that
               Brazil was, as the Economist put it back in 2009, “taking off”.
             </p>
@@ -71,15 +71,15 @@ export default function Page() {
               Now, 10 years after the event, Brazil is in a very different
               place. Still dealing with a recession that started in 2014 and the
               consequences of the largest corruption scandal in the world,
-              Brazil never took off as it expected. The legacy of the World Cup
-              also mirrors the country&apos;s new reality. Instead of heralding
-              a new era, the 2014 World Cup is mainly remembered in Brazil for
-              its massive spending on infrastructure. No other construction
-              project captures that quite as well as the stadiums built and
-              renovated in time for the event. With many still repaying their
-              debts and some being completely underutilized, the stadiums are
-              the most palpable reminder of Brazil&apos;s late 2000s optimism,
-              and what came of it.
+              Brazil never "took off" as it expected. The legacy of the World
+              Cup also mirrors the country&apos;s new reality. Instead of
+              heralding a new era, the 2014 World Cup is mainly remembered in
+              Brazil for its massive spending on infrastructure. And, no other
+              construction project captures that quite as well as the stadiums
+              built and renovated in time for the event. With many still
+              repaying their debts and some being completely underutilized, the
+              stadiums are the most palpable reminder of Brazil&apos;s late
+              2000s optimism, and what came of it.
             </p>
 
             <p className="text-xl mb-80 ">
@@ -97,17 +97,17 @@ export default function Page() {
           <ScrollyBar className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center">
             <p className="text-xl mb-10 ">
-              Another reason why there is so much leftover debt is due to
-              accrued fees due to missing payments. Take for example Arena
-              Corinthians, built in the major city of São Paulo and meant to be
-              the home of one of its most popular teams. While its final cost
-              was only 260 million reais more than the original estimate, the
-              debt it still needs to pay is over 600 million reais. That alone
-              is almost as high as the original estimated cost of building the
-              stadium. While they have recently demonstrated their intent to pay
-              the debt in full, it has gotten to the point where it has been
-              affecting the actual team’s performance, as money that could have
-              been spent bettering its roster has gone to paying off its debt.
+              One of the reasons for this is due to final costs grossly
+              surpassing the original estimates. For example, Beira-Rio stadium,
+              built in the city of Porto Alegre, had an original estimated cost
+              of 154 million reais. By the end, the actual construction cost was
+              more than double, totaling 366.3 million reais. While not all
+              stadiums compared this badly, final costs were, on average, around
+              200 million reais more than the estimates. While they have
+              recently demonstrated their intent to pay the debt in full, it has
+              gotten to the point where it has been affecting the actual
+              team&apos;s performance, as money that could have been spent
+              bettering its roster has gone to paying off its debt.
             </p>
             <p className="text-xl mb-10 ">
               With all of these issues, many stadiums have resorted to
