@@ -4,13 +4,14 @@ import ScrollyNumber from "../components/ScrollyTelling/ScrollyNumber";
 import ScrollyBar from "../components/ScrollyTelling/ScrollyBar";
 //import useMeasure from "react-use-measure";
 import Image from "next/image";
-import backgroundImage from "../../../public/BrazilHeader.webp";
+import backgroundImage from "../../../public/BrazilHeader.jpg";
 import Header from "../components/Header";
 import InteractiveBar from "../components/InteractiveBar";
 import ScrollyChart from "../components/ScrollyTelling/ScrollyChart";
 import { PieChart } from "@mui/x-charts/PieChart";
 import BackToTop from "../components/ToTop";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Page() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -43,17 +44,36 @@ export default function Page() {
             src={backgroundImage}
             alt=""
             className="block w-full h-auto"
-            onLoadingComplete={() => setImageLoaded(true)}
+            onLoad={() => setImageLoaded(true)}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
         </div>
       </div>
       {imageLoaded && (
         <>
+          <p className="text-slate-900 italic text-center border-2 border-white -mt-8">
+            Empty Maracana Stadium after renovation. (Photo by{" "}
+            <Link
+              className="text-blue-600 dark:text-blue-500 hover:underline"
+              href="https://unsplash.com/@martinaarflot"
+              target="_blank"
+            >
+              Martin Aarflot
+            </Link>{" "}
+            on{" "}
+            <Link
+              className="text-blue-600 dark:text-blue-500 hover:underline"
+              href="https://unsplash.com/photos/soccer-field-stadium-yqPztPTSBts"
+              target="_blank"
+            >
+              Unsplash
+            </Link>
+            )
+          </p>
           {/* Intro Text */}
-          <div className="w-3xl self-center">
-            <h2 className="text-black font-bold text-center">
-              Brazil&apos;s World Cup Legacy: A False Promise of Growth
+          <div className="max-w-3xl self-center">
+            <h2 className="font-bold text-left text-brazil-green">
+              A False Promise of Growth
             </h2>
           </div>
           <div className="max-w-3xl self-center">
@@ -64,25 +84,32 @@ export default function Page() {
               country was poised to become one of the key global players in the
               coming decades. And hosting the World Cup was the perfect way to
               demonstrate it. Spending an estimated 31.2 billion reais (around
-              6.3 billion dollars) in preparation for the event, it seemed that
-              Brazil was, as the Economist put it back in 2009, “taking off”.
+              12 billion dollars in 2014) in preparation for the event, it
+              seemed that Brazil was, as the Economist put it back in 2009,
+              &quot;taking off&quot;.
             </p>
             <p className="text-xl mb-10 ">
               Now, 10 years after the event, Brazil is in a very different
               place. Still dealing with a recession that started in 2014 and the
               consequences of the largest corruption scandal in the world,
-              Brazil never "took off" as it expected. The legacy of the World
-              Cup also mirrors the country&apos;s new reality. Instead of
-              heralding a new era, the 2014 World Cup is mainly remembered in
-              Brazil for its massive spending on infrastructure. And, no other
-              construction project captures that quite as well as the stadiums
-              built and renovated in time for the event. With many still
-              repaying their debts and some being completely underutilized, the
-              stadiums are the most palpable reminder of Brazil&apos;s late
-              2000s optimism, and what came of it.
+              Brazil never &quot;took off&quot; as it expected.
             </p>
 
-            <p className="text-xl mb-80 ">
+            <p className="text-xl mb-10 ">
+              The legacy of the World Cup also mirrors the country&apos;s new
+              reality. Instead of heralding a new era, the 2014 World Cup is
+              mainly remembered in Brazil for its massive spending on
+              infrastructure. And, no other construction project captures that
+              quite as well as the stadiums built and renovated in time for the
+              event. With many still repaying their debts and some being
+              completely underutilized, the stadiums are the most palpable
+              reminder of Brazil&apos;s late 2000s optimism, and what came of
+              it.
+            </p>
+            <p className="text-2xl text-brazil-green font-bold mb-80">
+              Stadium Debt
+            </p>
+            {/* <p className="text-xl mb-80 ">
               To build and renovate 13 stadiums by the time of the World Cup,
               the Brazilian government decided to step in and help finance this
               operation. Through a national bank called the National Bank for
@@ -91,24 +118,22 @@ export default function Page() {
               thousand dollars in today&apos;s exchange) of public money to the
               stadiums. In its initial estimates, BNDES found all stadiums to be
               fit to pay back this debt in 15 years.
-            </p>
+            </p> */}
           </div>
           <ScrollyNumber className="max-w-3xl align-center" />
           <ScrollyBar className="max-w-3xl align-center" />
           <div className="max-w-3xl self-center">
-            <p className="text-xl mb-10 ">
+            {/* <p className="text-xl mb-10 ">
               One of the reasons for this is due to final costs grossly
               surpassing the original estimates. For example, Beira-Rio stadium,
               built in the city of Porto Alegre, had an original estimated cost
               of 154 million reais. By the end, the actual construction cost was
-              more than double, totaling 366.3 million reais. While not all
-              stadiums compared this badly, final costs were, on average, around
-              200 million reais more than the estimates. While they have
+              more than double, totaling 366.3 million reais. While they have
               recently demonstrated their intent to pay the debt in full, it has
               gotten to the point where it has been affecting the actual
               team&apos;s performance, as money that could have been spent
               bettering its roster has gone to paying off its debt.
-            </p>
+            </p> */}
             <p className="text-xl mb-10 ">
               With all of these issues, many stadiums have resorted to
               renegotiating their original contracts, trying to move the
@@ -121,8 +146,10 @@ export default function Page() {
               it will take much longer than expected for the publicly funded
               investments to see their return.
             </p>
-            <p className="text-xl mb-10 ">USAGE</p>
-            <p className="text-xl mb-10 ">
+            <p className="text-2xl text-brazil-green font-bold mb-10">
+              Stadium Usage
+            </p>
+            <p className="text-xl mb-80 ">
               While the preparation for the World Cup involved renovating many
               of Brazil&apos;s most famous stadiums, it also involved building
               new ones to accommodate FIFA&apos;s requirements and the massive
@@ -130,35 +157,27 @@ export default function Page() {
               that previously had extremely small stadiums or none. However,
               instead of serving as an incentive to boost soccer matches and
               events in cities that previously could not hold them, many of
-              these new stadiums now sit underutilized.
+              these new stadiums now sit underutilized. One of the most
+              significant examples of this is Arena Amazonas, built in Manaus,
+              the 7th most populous city in Brazil.
+            </p>
+          </div>
+          <ScrollyChart className="max-w-3xl align-center" />
+          <div className="max-w-3xl self-center">
+            <p className="text-xl mb-10 ">
+              Arena das Dunas only had 10 major soccer games in 2023, and most
+              of those were from Série C, one of the least premier soccer
+              leagues in the country. With a max capacity of just over 31
+              thousand people, it uses about 40% of the stadium for any given
+              game. While these numbers may look impressive when compared to
+              Arena Amazonas, about 20% of the tickets are given away for free.
             </p>
             <p className="text-xl mb-10 ">
-              One of the most significant examples of this is Arena Amazonas,
-              built in Manaus, the 7th most populous city in Brazil. With a
-              maximum capacity of over 44 thousand people, the stadium seemed
-              fit to bring in a new wave of soccer fervor to the city. However,
-              since then, it has used only an average of 25% of its maximum
-              capacity. Even when considering events not related to soccer, the
-              stadium underperforms. In 2023, it hosted only four shows. As of
-              this moment, there are no events currently scheduled to be held
-              this year.
-            </p>
-            <p className="text-xl mb-10 ">
-              Smaller cities also suffer from this same fate. Arena das Dunas
-              only had 10 major soccer games in 2023, and most of those were
-              from Série C, one of the least premier soccer leagues in the
-              country. With a max capacity of just over 31 thousand people, it
-              uses about 40% of the stadium for any given game. While these
-              numbers may look impressive when compared to Arena Amazonas, about
-              20% of the tickets are given away for free.
-            </p>
-            <p className="text-xl mb-10 ">
-              Free tickets are yet another issue that plagues a lot of these
-              stadiums. Due to the low number and quality of the matches played
-              in these arenas, many resort to giving away significant amounts of
-              tickets for free to fill up the already empty stadiums. In Arena
-              Amazonas, an average of 40% of the tickets sold in 2023 were given
-              away for free.
+              Due to the low number and quality of the matches played in these
+              arenas, many resort to giving away significant amounts of tickets
+              for free to fill up the already empty stadiums. In Arena Amazonas,
+              an average of 40% of the tickets sold in 2023 were given away for
+              free.
             </p>
 
             <p className="text-xl mb-10 ">
@@ -182,8 +201,6 @@ export default function Page() {
               original vision of 2014.
             </p>
           </div>
-
-          <ScrollyChart className="max-w-3xl align-center" />
         </>
       )}
       <Footer />
